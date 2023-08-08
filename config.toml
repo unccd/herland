@@ -1,0 +1,7 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'UNCCD #HerLand'
+[params]
+  google_fonts = [
+    ["Yantramanav", "300, 400", "500", "700"],
+  ]
