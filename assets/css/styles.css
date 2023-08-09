@@ -4,16 +4,16 @@
  
 
 html {
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y proximity;
 
 }
 body {
   margin: 0;
   font-family: "Yantramanav";
-   /* overflow: hidden; */
 }
 section {
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
+  overflow: hidden;
 }
 /* This is not supported in Firefox */
 ::-webkit-scrollbar {
@@ -58,15 +58,15 @@ video {
   position: relative;
   z-index: 5;
 }
-/* .panel-fixed .panel-inner {
-  position: fixed;
+.panel-fixed .panel-inner {
+  position: fixed !important;
   top: 0;
   left: 0;
-  z-index: 2 x;
+  z-index: 2 !important;
   }
 .panel-fixed {
   z-index: 1
-} */
+}
 .unccd-logo {
   fill: red
 }
@@ -75,23 +75,27 @@ video {
   z-index: 1000;
   margin-left: 80px;
 }
+.carousel-item {
+  width: 550px;
+  height: 550px;
+  flex-shrink: 0;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.filter {
+  filter: grayscale(100%);
+}
 
-.panel {
-  position: relative;
-  min-height: 500px;
-  z-index: 5;
-  }
-  .panel-fixed {
-      z-index: 1;
-      }
-  .panel-inner {
-      padding: 1em;
-      width: 100%;
-      }
-      .panel-fixed .panel-inner {
-          position: fixed;
-          top: 0;
-          left: 0;
-          z-index: 2;
-          }
-          *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.carousel-arrow {
+  transform: scale(3);  
+  opacity: 0.5;
+}
+.carousel-arrow-disabled {
+  opacity: 0.2;
+}
+.tests {
+  background-image: url('../../images/Sarangerel-Mongolia.jpg');
+}
