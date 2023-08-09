@@ -4,7 +4,7 @@
  
 
 html {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 
 }
 body {
@@ -13,7 +13,7 @@ body {
    /* overflow: hidden; */
 }
 section {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 /* This is not supported in Firefox */
 ::-webkit-scrollbar {
@@ -58,15 +58,15 @@ video {
   position: relative;
   z-index: 5;
 }
-.panel-fixed .panel-inner {
-  position: fixed !important;
+/* .panel-fixed .panel-inner {
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 2 !important;
+  z-index: 2 x;
   }
 .panel-fixed {
   z-index: 1
-}
+} */
 .unccd-logo {
   fill: red
 }
@@ -75,3 +75,23 @@ video {
   z-index: 1000;
   margin-left: 80px;
 }
+
+.panel {
+  position: relative;
+  min-height: 500px;
+  z-index: 5;
+  }
+  .panel-fixed {
+      z-index: 1;
+      }
+  .panel-inner {
+      padding: 1em;
+      width: 100%;
+      }
+      .panel-fixed .panel-inner {
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          }
+          *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }

@@ -1,26 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const _window = window;
-  const panels = document.querySelectorAll('.panel');
-  const panelsY = [];
+document.addEventListener('DOMContentLoaded', function() {
+  const _window = window,
+    panels = document.querySelectorAll('.panel'),
+    panelsY = [];
 
-  panels.forEach(el => {
-    panelsY.push(el.getBoundingClientRect().top + window.pageYOffset);
+  panels.forEach(function(el) {
+    panelsY.push(el.offsetTop);
   });
 
-  _window.addEventListener('scroll', () => {
+  _window.addEventListener('scroll', function() {
     updateWindow();
   });
 
   function updateWindow() {
-    const y = _window.scrollY || _window.pageYOffset;
-    let i = 0;
-    const l = panels.length;
+    var y = _window.scrollY;
+    let i;
 
-    while (i < l && (i === l - 1 || (y >= panelsY[i] && y <= panelsY[i + 1]))) {
-      i++;
+    for (i = 0; i < panelsY.length; i++) {
+      if ((i === panelsY.length - 1) || (y >= panelsY[i] && y <= panelsY[i + 1])) {
+        break;
+      }
     }
 
-    panels.forEach((panel, index) => {
+    panels.forEach(function(panel, index) {
       if (index !== i) {
         panel.classList.remove('panel-fixed');
       } else {
@@ -28,4 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
 });
