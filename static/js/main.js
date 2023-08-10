@@ -79,14 +79,13 @@ updateCarousel();
 window.addEventListener("scroll", () => {
   const sections = document.querySelectorAll("section");
   const logoImg = document.querySelector("#unccd-logo");
-   
+
   let currentSection = null;
 
   for (let i = sections.length - 1; i >= 0; i--) {
     const section = sections[i];
     const rect = section.getBoundingClientRect();
-    console.log(rect)
-    if (rect.top <= window.innerHeight - (window.innerHeight-1)) {
+    if (rect.top <= window.innerHeight - (window.innerHeight - 1)) {
       currentSection = section;
       break;
     }
@@ -94,7 +93,6 @@ window.addEventListener("scroll", () => {
 
   if (currentSection) {
     const logoDiv = currentSection.querySelector("div");
-    console.log(logoDiv.classList.contains('unccd-logo-white'));
     if (logoDiv) {
       const logoClass = logoDiv.classList.contains("unccd-logo-white")
         ? "logos/unccd-white.svg"
@@ -105,3 +103,37 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+function showVideoOverlay(videoShortcode) {
+  const body = document.getElementsByTagName("body")[0];
+  const overlay = document.createElement("div");
+  const emptyDiv = document.createElement("div");
+  const contentDiv = document.createElement("div");
+  const closeIcon = document.createElement("img");
+  const iframe = document.createElement("iframe");
+  overlay.className = "overlay grid grid-cols-12";
+  contentDiv.className = "col-span-10 self-center";
+  closeIcon.src = "icons/x.svg";
+  closeIcon.className = "overlay-close mt-10 ml-10";
+  iframe.setAttribute("width", "100%");
+  iframe.setAttribute("height", "100%");
+  iframe.src = `https://www.youtube.com/embed/${videoShortcode}`;
+  iframe.allowFullscreen = true;
+  closeIcon.onclick = closeVideoOverlay;
+
+  overlay.appendChild(emptyDiv);
+  overlay.appendChild(contentDiv);
+  overlay.appendChild(closeIcon);
+  contentDiv.appendChild(iframe);
+
+  body.appendChild(overlay);
+}
+
+function closeVideoOverlay() {
+  const overlay = document.querySelector(".overlay");
+  if (overlay) {
+    overlay.parentNode.removeChild(overlay);
+  }
+}
+
+
+///TODO REFACTOR JS

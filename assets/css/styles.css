@@ -67,9 +67,6 @@ video {
 .panel-fixed {
   z-index: 1
 }
-.unccd-logo {
-  fill: red
-}
 #unccd-logo {
   position: fixed;
   z-index: 1000;
@@ -98,4 +95,45 @@ video {
 }
 .tests {
   background-image: url('../../images/Sarangerel-Mongolia.jpg');
+}
+.video-thumbnail-wrapper {
+   overflow: hidden;
+   cursor: pointer;
+   position: relative;
+   user-select: none;
+}
+.video-thumbnail-wrapper .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: scale(5);
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+.video-thumbnail-wrapper:hover .play-button {
+  transform: scale(5);
+  opacity: 9;
+}
+.video-thumbnail-wrapper .video-thumbnail {
+  transition: all 0.5s ease;
+} 
+.video-thumbnail-wrapper:hover .video-thumbnail {
+  transform: scale(1.05);
+}
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+.overlay-close {
+  transform: scale(2);
+  cursor: pointer;
+}
+#unccd-logo {
+  display: none
 }
