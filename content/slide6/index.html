@@ -1,5 +1,44 @@
 +++
 +++
-<div class=" bg-orange-500		h-full w-full text-white slide-content panel-inner unccd-logo-white" >
-  <p class="text-3xl pt-40">Slide 6</p>
+<div class=" bg-neutral-900 h-full w-full slide-content panel-inner unccd-logo-white flex flex-col col-span-2" >
+  <p class="text-3xl pt-40">Explore the digital brochure</p>
+  <div>
+    <img src="images/brochure-mockup.png" alt="brochure" class="brochure" onclick="showImageOverlay(0)">
+  </div>
+  <div onclick="showImageOverlay(0)">
+    <img src="icons/arrow-right.svg" alt="Right arrow" onclick="openImageOverlay(0)">
+    <p>Open flipbook</p>
+  </div>
+   
+  <!-- <div class="overlay slide-content flex flex-col justify-center">
+    <div class="self-end">
+      <img src="icons/x.svg" class="overlay-close" onclick="closeOverlay()">
+    </div>
+    <div>
+      <h2 class="text-4xl mb-10">Test <span class="text-gray-500	">(Test)</span></h2>
+    </div>
+
+    <div class=" grid grid-cols-12 content-center	gap-12">
+      <div class="col-span-9">
+        <img src="portraits/0-Aiyana-_-USA-(Alaska)_web.jpg" alt="">
+      </div>
+      <div class="col-span-2 flex flex-col justify-between	">
+        <div>
+          <p class="font-bold mb-8">For her land she provides, and in return, she's provided for.</p>
+          <p>They are both nourished, intertwined, a tapestry old as time. Her land is her right,
+            because her land is her life.
+          </p>
+        </div>
+        <div class="flex gap-10">
+          <button id="prevBtn" onclick="prevSlide()">
+            <img src="icons/arrow-left-white.svg" class="overlay-arrow"/>
+          </button>
+          <button id="nextBtn" onclick="nextSlide()">
+            <img src="icons/arrow-right-white.svg" class="overlay-arrow"/>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- TODO fix bug where overlay css would not work if above commented code is deleted -->
 </div>
