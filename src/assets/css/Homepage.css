@@ -1,0 +1,154 @@
+/* GENERAL  */
+#unccd-logo {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 5em;
+}
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+}
+.overlay-close-icon {
+  transform: scale(2);
+  cursor: pointer;
+  justify-self: center;
+}
+.overlay-arrow {
+  transform: scale(4);
+  opacity: 0.5;
+}
+.overlay-arrow-disabled {
+  transform: scale(4);
+  opacity: 0.2;
+}
+section {
+  padding: 0 5em;
+  min-height: 100vh;
+  max-width: 100%;
+}
+.panel {
+  position: relative;
+  z-index: 5;
+  min-height: 100vh;
+}
+.panel-fixed {
+  z-index: 1;
+}
+.panel-inner {
+  width: 100%;
+}
+.panel-fixed .panel-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* 1. LANDING */
+.video-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: none;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
+  left: 0;
+}
+
+/* 3.PORTRAIT-CAROUSEL */
+.carousel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel-image-wrapper {
+  padding-top: 100%; /* Maintain a square aspect ratio */
+  position: relative;
+  overflow: hidden;
+  margin: 0.5em;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%); /* Apply black and white effect */
+  transition: filter 0.3s;
+}
+
+/* 4. DESERT  */
+.desert-logo {
+  background-image: url("../../static/images/Sarangerel-Mongolia.jpg");
+}
+
+/* 5.VideoExhibition */
+.video-thumbnail-wrapper {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+.video-thumbnail-wrapper .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: scale(5);
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+.video-thumbnail-wrapper:hover .play-button {
+  transform: scale(5);
+  opacity: 9;
+}
+.video-thumbnail-wrapper .video-thumbnail {
+  transition: all 0.5s ease;
+}
+.video-thumbnail-wrapper:hover .video-thumbnail {
+  transform: scale(1.05);
+}
+
+/* 7.FOOTER */
+.footer-background {
+  background-image: url("../../static/portraits/Maya-India.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  section {
+    padding: 0 1em;
+  }
+  #unccd-logo {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 1em;
+    transform: scale(0.75);
+  }
+  .contact-flex {
+    align-items: flex-start ;
+    flex-direction: column !important;
+    gap: 2em;
+  }
+}

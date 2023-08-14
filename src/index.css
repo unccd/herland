@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html {
+  scroll-snap-type: y proximity;
+}
+.panel {
+  scroll-snap-align: start;
+} */
+body {
+  margin: 0;
+}
+.full-height {
+  min-height: 100vh
+}
+.icon-white {
+  filter: invert(1);
+}
+ 
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  width: 0;
+}
+/* Hide the default scrollbar track in Webkit browsers */
+::-webkit-scrollbar-track {
+  display: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
