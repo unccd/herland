@@ -46,7 +46,7 @@ function PortraitCarousel(props) {
           #HerLand Photo Exhibition
         </p>
         <div className="grid grid-cols-12 text-black">
-          <p className="max-sm:text-base text-2xl font-light mt-8 col-span-8">
+          <p className="max-sm:text-base text-2xl font-light mt-8 md:col-span-8 sm:col-span-12 max-sm:col-span-12" >
             Experience the strength and beauty of women across continents in our
             exclusive 'Women & Land' photo exhibition. Curated by{" "}
             <a
@@ -55,7 +55,7 @@ function PortraitCarousel(props) {
               className="underline"
             >
               Inna Modja, UNCCD Goodwil Ambassador
-            </a>{" "}
+            </a>
             and Marco Conti Sikic, these portraits portray the essence of
             women's relationship with the land.
           </p>

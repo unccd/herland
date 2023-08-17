@@ -1,9 +1,9 @@
 function CampaignVideo() {
   return (
     <section className="full-height bg-zinc-950 text-white panel-inner grid content-center	">
-      <div className="grid grid-cols-12 mt-6 gap-6 ">
+      <div className="grid grid-cols-12 mt-24 gap-6 ">
         <div
-          className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner relative  mt-16"
+          className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner relative "
           style={{ position: "relative", height: "100%" }}
         >
           <iframe

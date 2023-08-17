@@ -56,14 +56,12 @@ section {
   z-index: 2;
 }
 .panel-fixed-tall .panel-inner {
-  position: relative;
+  position: fixed;
   bottom: 0;
   left: 0;
   z-index: 2;
 }
 .panel-taller {
-  position: relative ;
-  z-index: 5;
 }
 
 .close-icon {
@@ -140,7 +138,6 @@ iframe {
 /* campaign toolkit */
 .campaign-toolkit-background {
   background: url("../../static/images/campaign-toolkit.jpg") no-repeat left center;
-   
 }
 
 /* footer */
@@ -206,6 +203,9 @@ iframe {
   .landing-background {
     background: url('../../static/images/landing-background-mobile.jpg')  no-repeat left bottom; 
     background-size: cover;
+  }
+  .campaign-toolkit-background {
+    background: url("../../static/images/campaign-toolkit.jpg") no-repeat 50% top;
   }
   .landing-text {
     color:#222;

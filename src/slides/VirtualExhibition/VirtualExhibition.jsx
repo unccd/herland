@@ -5,7 +5,7 @@ import ArrowRight from "../../static/icons/arrow-right.svg";
 function VirtualExhibition() {
   return (
     <section className="bg-white panel-inner grid grid-cols-2 h-full">
-      <div className="lg:col-span-1  flex items-center p-8 sm:col-span-2 max-sm:col-span-2">
+      <div className="lg:col-span-1  flex items-center sm:col-span-2 max-sm:col-span-2">
         <div className="font-light mt-32">
           <h2 className=" xs:text-3xl md:text-4xl lg:text-5xl  max-xs:text-2xl font-light  ">
             Interactive virtual exhibition
@@ -28,7 +28,7 @@ function VirtualExhibition() {
         </div>
       </div>
 
-      <div className="lg:col-span-1  flex items-center p-8 sm:col-span-2 max-sm:col-span-2 ">
+      <div className="lg:col-span-1  flex items-center py-8 sm:col-span-2 max-sm:col-span-2 ">
         <img
           src={videoExhibitionImg}
           alt="Video Exhibition"

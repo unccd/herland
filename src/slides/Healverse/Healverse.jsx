@@ -21,7 +21,6 @@ function Healverse() {
             allowFullScreen
             height={"100%"}
             width={"100%"}
-            style={{ position: "relative", height: "100%" }}
           />
         </div>
         <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 lg:ml-6 max-sm:ml- mt-6 mb-6 font-light">
