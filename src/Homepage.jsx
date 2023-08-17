@@ -72,7 +72,7 @@ function Homepage() {
       // Update classes
       panels.forEach((panel, index) => {
         if (index === i) {
-          changeLogoColor(panel.classList)
+          changeLogoColor(panel.classList);
 
           panel.classList.add("panel-fixed");
         } else {
@@ -104,7 +104,7 @@ function Homepage() {
   //     // Loop through our panel positions
   //     let i;
   //     for (i = 0; i < panels.length; i++) {
-  //       /* 
+  //       /*
   //           Firstly, we break if we're checking our last panel,
   //           otherwise we compare if the y position is in between
   //           two panels
@@ -149,10 +149,16 @@ function Homepage() {
         <HerlandStories />
       </div>
       <div className="panel unccd-logo-black">
-        <PortraitCarousel setIsOverlayActive={setIsPortraitOverlayActive} setPortraitSrc={setOverlayPortraitSrc}/>
+        <PortraitCarousel
+          setIsOverlayActive={setIsPortraitOverlayActive}
+          setPortraitSrc={setOverlayPortraitSrc}
+        />
       </div>
       <div className="panel unccd-logo-white">
-        <VideoExhibiton setIsOverlayActive={setIsVideoOverlayActive} setVideoSrc={setOverlayVideoSrc}/>
+        <VideoExhibiton
+          setIsOverlayActive={setIsVideoOverlayActive}
+          setVideoSrc={setOverlayVideoSrc}
+        />
       </div>
       <div className="panel unccd-logo-black">
         <VirtualExhibition />
@@ -169,15 +175,22 @@ function Homepage() {
         alt="UNCCD-logo"
         className="unccd-logo mt-6"
       />
-      {isPortraitOverlayActive ? 
+      {isPortraitOverlayActive ? (
         <PortraitOverlay
           portraitSrc={overlayPortraitSrc}
           setIsOverlayActive={setIsPortraitOverlayActive}
         />
-       : 
+      ) : (
         ""
-      }
-      {isVideoOverlayActive ? <VideoOverlay setIsOverlayActive={setIsVideoOverlayActive} url={overlayVideoSrc} />  : ''}
+      )}
+      {isVideoOverlayActive ? (
+        <VideoOverlay
+          setIsOverlayActive={setIsVideoOverlayActive}
+          url={overlayVideoSrc}
+        />
+      ) : (
+        ""
+      )}
     </>
   );
 }
