@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* GENERAL  */
 #unccd-logo {
   position: fixed;
@@ -8,14 +13,15 @@
 .overlay {
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  /* background-color: black; */
   position: fixed;
   z-index: 1001;
   top: 0;
   left: 0;
 }
 .overlay-close-icon {
-  transform: scale(2);
+  width: 4em;
+  height: 4em ;
   cursor: pointer;
   justify-self: center;
 }
@@ -27,10 +33,13 @@
   transform: scale(4);
   opacity: 0.2;
 }
+.overlay-portrait-image {
+  max-width: 100%;
+}
 section {
   padding: 0 5em;
   min-height: 100vh;
-  max-width: 100%;
+   
 }
 .panel {
   position: relative;
@@ -42,6 +51,9 @@ section {
 }
 .panel-inner {
   width: 100%;
+  /* height: 100vh; */
+  overflow: hidden;
+
 }
 .panel-fixed .panel-inner {
   position: fixed;
@@ -49,8 +61,21 @@ section {
   left: 0;
   z-index: 2;
 }
+.panel-taller {
+  position: relative ;
+  z-index: 5;
+}
 
-/* 1. LANDING */
+.close-icon {
+  min-width: 32px;
+  min-height: 32px;
+}
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%; /* change this to a fixed width, or create a container with a width. */
+  height: 100%;
+}
+/*  LANDING */
 .video-wrapper {
   display: block;
   position: relative;
@@ -59,7 +84,7 @@ section {
 }
 video {
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   max-width: none;
   min-height: 100%;
@@ -68,10 +93,9 @@ video {
   z-index: -100;
   background-size: cover;
   overflow: hidden;
-  left: 0;
 }
 
-/* 3.PORTRAIT-CAROUSEL */
+/* PORTRAIT-CAROUSEL */
 .carousel-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -96,12 +120,12 @@ video {
   transition: filter 0.3s;
 }
 
-/* 4. DESERT  */
+/*  DESERT  */
 .desert-logo {
   background-image: url("../../static/images/Sarangerel-Mongolia.jpg");
 }
 
-/* 5.VideoExhibition */
+/* VideoExhibition */
 .video-thumbnail-wrapper {
   overflow: hidden;
   cursor: pointer;
@@ -128,11 +152,11 @@ video {
   transform: scale(1.05);
 }
 
-/* 7.FOOTER */
+/* FOOTER */
 .footer-background {
   background-image: url("../../static/portraits/Maya-India.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 10% 10%;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 640px) {
@@ -151,4 +175,18 @@ video {
     flex-direction: column !important;
     gap: 2em;
   }
+}
+/* Healv3rse */
+.healverse-background {
+
+  /* background-image: url('../../static/images/healverse-vector.png');
+  background-position: bottom;
+  background-repeat: no-repeat; */
+  background: linear-gradient( #002257, #460057);
+  ;
+}
+.healverse-blocks-png {
+  display: block;
+  width: 100vw;
+  z-index: 1;
 }

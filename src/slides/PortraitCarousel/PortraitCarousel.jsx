@@ -1,8 +1,15 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import importAllSmallPortraits from "./importPortraits";
+import PortraitOverlay from "../../overlays/PortraitOverlay";
+import { useState } from "react";
 
-function PortraitCarousel() {
+function PortraitCarousel(props) {
+  const {setIsOverlayActive, setPortraitSrc} = props;
+  const openOverlay = (portraitSrc) => {
+    setIsOverlayActive(true)
+    setPortraitSrc(portraitSrc)
+  }
   const portraits = importAllSmallPortraits(
     import.meta.globEager("../../static/small-portraits/*.jpg")
   );
@@ -12,7 +19,7 @@ function PortraitCarousel() {
         max: 3000,
         min: 1024,
       },
-      items: 4,
+      items: 3,
       partialVisibilityGutter: 40,
     },
     mobile: {
@@ -34,11 +41,21 @@ function PortraitCarousel() {
   };
   return (
     <section className="full-height bg-white flex flex-column justify-around panel-inner">
-      <div>
-        <p className="lg:text-3xl md:text-2xl text-black pt-36">
-          And yet, thread by thread it unwinds. Her land falls behind,<br/>tired, scarce, degraded, vulnerable.
+      <div className="font-light">
+        <p className="lg:text-4xl md:text-2xl text-black pt-36">
+          #HerLand Photo Exhibition
         </p>
-       </div>
+        <div className="grid grid-cols-12">
+          <p className="lg:text-2xl md:text-2xl text-black pt-4 col-span-8">
+            Experience the strength and beauty of women across continents in our
+            exclusive 'Women & Land' photo exhibition. Curated by{" "}
+            <a href='https://www.unccd.int/convention/land-ambassadors/inna-modja' target="_blank" className="underline">Inna Modja, UNCCD{" "}
+             Goodwil Ambassador</a> and Marco
+            Conti Sikic, these portraits portray the essence of women's
+            relationship with the land.
+          </p>
+        </div>
+      </div>
 
       <Carousel
         arrows
@@ -50,7 +67,13 @@ function PortraitCarousel() {
         swipeable
       >
         {portraits.map((portraitSrc, index) => (
-          <div key={index} className="carousel-image-wrapper">
+          <div
+            key={index}
+            className="carousel-image-wrapper cursor-pointer"
+            onClick={() => {
+              openOverlay(portraitSrc)
+            }}
+          >
             <img
               src={portraitSrc}
               alt={`Portrait ${index}`}
@@ -59,7 +82,7 @@ function PortraitCarousel() {
           </div>
         ))}
       </Carousel>
-    </section>
+     </section>
   );
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import NotFound from "./404/404";
 
 import Homepage from "./Homepage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -14,12 +14,8 @@ const router = createBrowserRouter([
     element: <Homepage />,
   },
   {
-    path: "/faq",
-    element: <h2>FAQ</h2>,
-  },
-  {
     path: "*",
-    element: <h2>404</h2>,
+    element: <NotFound />,
   },
 ]);
 
