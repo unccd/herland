@@ -5,11 +5,11 @@ import PortraitOverlay from "../../overlays/PortraitOverlay";
 import { useState } from "react";
 
 function PortraitCarousel(props) {
-  const {setIsOverlayActive, setPortraitSrc} = props;
+  const { setIsOverlayActive, setPortraitSrc } = props;
   const openOverlay = (portraitSrc) => {
-    setIsOverlayActive(true)
-    setPortraitSrc(portraitSrc)
-  }
+    setIsOverlayActive(true);
+    setPortraitSrc(portraitSrc);
+  };
   const portraits = importAllSmallPortraits(
     import.meta.globEager("../../static/small-portraits/*.jpg")
   );
@@ -42,17 +42,22 @@ function PortraitCarousel(props) {
   return (
     <section className="full-height bg-white flex flex-column justify-around panel-inner">
       <div className="font-light">
-        <p className="lg:text-4xl md:text-2xl text-black pt-36">
+        <p className="max-sm:text-2xl text-5xl font-light text-black pt-32">
           #HerLand Photo Exhibition
         </p>
-        <div className="grid grid-cols-12">
-          <p className="lg:text-2xl md:text-2xl text-black pt-4 col-span-8">
+        <div className="grid grid-cols-12 text-black">
+          <p className="max-sm:text-base text-2xl font-light mt-8 col-span-8">
             Experience the strength and beauty of women across continents in our
             exclusive 'Women & Land' photo exhibition. Curated by{" "}
-            <a href='https://www.unccd.int/convention/land-ambassadors/inna-modja' target="_blank" className="underline">Inna Modja, UNCCD{" "}
-             Goodwil Ambassador</a> and Marco
-            Conti Sikic, these portraits portray the essence of women's
-            relationship with the land.
+            <a
+              href="https://www.unccd.int/convention/land-ambassadors/inna-modja"
+              target="_blank"
+              className="underline"
+            >
+              Inna Modja, UNCCD Goodwil Ambassador
+            </a>{" "}
+            and Marco Conti Sikic, these portraits portray the essence of
+            women's relationship with the land.
           </p>
         </div>
       </div>
@@ -71,7 +76,7 @@ function PortraitCarousel(props) {
             key={index}
             className="carousel-image-wrapper cursor-pointer"
             onClick={() => {
-              openOverlay(portraitSrc)
+              openOverlay(portraitSrc);
             }}
           >
             <img
@@ -82,7 +87,7 @@ function PortraitCarousel(props) {
           </div>
         ))}
       </Carousel>
-     </section>
+    </section>
   );
 }
 

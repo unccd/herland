@@ -6,16 +6,18 @@ import PlayIcon from "../../static/icons/play-fill.svg";
 import VideoOverlay from "../../overlays/VideoOverlay";
 
 function VideoExhibition(props) {
-  const {setIsOverlayActive, setVideoSrc} = props
+  const { setIsOverlayActive, setVideoSrc } = props;
   const showVideoOverlay = (url) => {
     setVideoSrc(url);
     setIsOverlayActive(true);
   };
-  
-  const nameClassNames = "xs:text-xl md:text-3xl font-light mt-6";
-  const descriptionClassNames = "xs:text-md md:text-lg font-light mt-6";
+
+  const nameClassNames =
+    "max-xs:text-xl xs:text-xl md:text-3xl font-light mt-6";
+  const descriptionClassNames =
+    "max-xs:text-base xs:text-base md:text-lg font-light mt-2";
   return (
-    <section className="full-height bg-gray-950 text-white flex flex-col panel-inner mb-20">
+    <section className="full-height bg-gray-950 text-white flex flex-col panel-inner">
       <h2 className="xs:text-3xl md:text-4xl lg:text-5xl pt-40 font-light  ">
         Video-Art Exhibition: "TransNature" #HerLand{" "}
       </h2>
@@ -26,8 +28,8 @@ function VideoExhibition(props) {
         challenges of desertification. Experience the beauty and complexity of
         our evolving relationship with the planet.
       </p>
-      <div className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-12 lg:gap-24 mt-16 col-span-10">
-        <div className="">
+      <div className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-6 md:gap-12 lg:gap-24 mt-16 col-span-10">
+        <div className="my-6">
           <div
             className="video-thumbnail-wrapper flex justify-center"
             onClick={() => showVideoOverlay("dlbWSxvqq9I")}
@@ -41,10 +43,10 @@ function VideoExhibition(props) {
           </div>
           <h3 className={nameClassNames}>Yin Yuzhen</h3>
           <p className={descriptionClassNames}>
-            The Woman Who Turned Desert into Oasis 
+            The Woman Who Turned Desert into Oasis
           </p>
         </div>
-        <div className=" ">
+        <div className="my-6">
           <div
             className="video-thumbnail-wrapper"
             onClick={() => showVideoOverlay("NzAtPwMbGgw")}
@@ -58,9 +60,10 @@ function VideoExhibition(props) {
           </div>
           <h3 className={nameClassNames}>Suhucam</h3>
           <p className={descriptionClassNames}>
-          Igniting Change in Bamunkumbit, Cameroon          </p>
+            Igniting Change in Bamunkumbit, Cameroon{" "}
+          </p>
         </div>
-        <div className=" ">
+        <div className="my-6">
           <div
             className="video-thumbnail-wrapper flex justify-center"
             onClick={() => showVideoOverlay("WUJJDowTnAk")}
@@ -74,11 +77,10 @@ function VideoExhibition(props) {
           </div>
           <h3 className={nameClassNames}>Marite Alvarez</h3>
           <p className={descriptionClassNames}>
-          Embracing the Wisdom of Pastoral Life   
+            Embracing the Wisdom of Pastoral Life
           </p>
         </div>
       </div>
-      
     </section>
   );
 }

@@ -10,12 +10,13 @@ function VideoOverlay(props) {
       onClick={closeOverlay}
     >
       <div>
-        <div className="relative" style={{width:'90vw', height: '90vh'}}>
+        <div className="relative" style={{ width: "90vw", height: "90vh" }}>
           <iframe
             width="100%"
             height="100%"
-            src={`https://www.youtube.com/embed/${url}`}
+            src={`https://www.youtube.com/embed/${url}?rel=0&modestbranding=1&fs=0`}
             allowFullScreen
+            modestbranding={1}
           ></iframe>
           <button
             className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"

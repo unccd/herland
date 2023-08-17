@@ -1,45 +1,53 @@
 function CampaignVideo() {
   return (
-    <section className="full-height bg-emerald-950 text-white panel-inner grid content-center	">
-       <div className="grid grid-cols-12 mt-6">
+    <section className="full-height bg-zinc-950 text-white panel-inner grid content-center	">
+      <div className="grid grid-cols-12 mt-6 gap-6 ">
         <div
-          className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner relative h-3/6"
-          style={{ position: "relative", height:'100%' }}
+          className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner relative  mt-16"
+          style={{ position: "relative", height: "100%" }}
         >
           <iframe
-            src="https://www.youtube.com/embed/b_0rx56VCak"
+            src="https://www.youtube.com/embed/b_0rx56VCak?rel=0&modestbranding=1&fs=0"
             title="YouTube Video"
             allowFullScreen
-            height={'100%'}
+            height={"100%"}
             width={"100%"}
           />
         </div>
-        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 ml-6 font-light">
+        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 ml-6 mb-10 font-light">
           <p>
-            Together with partners, activists and influencers, UNCCD is
-            spearheading the campaign #HerLand to promote inspiring examples of
-            women and girls’ leadership in sustainable land management,
-            mobilizing support to secure land rights for women and girls across
-            the world.
+            Together with partners, activists and influencers,{" "}
+            <a
+              href="https://www.unccd.int/convention/overview"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              UNCCD
+            </a>{" "}
+            is spearheading the campaign{" "}
+            <a
+              href="https://trello.com/b/AuQjCPfN/unccd-herland-campaign"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              {" "}
+              #HerLand
+            </a>{" "}
+            to promote inspiring examples of women and girls’ leadership in
+            sustainable land management, mobilizing support to secure land
+            rights for women and girls across the world.
           </p>
-          <p className="mt-6">
-            Every voice and every action counts, and you too can help by
-            engaging your communities to advocate the key role of gender
-            equality in empowering women and girls to take the lead on global
-            land restoration and drought resilience efforts. We invite you to
-            discover more and join!
-          </p>
-          <p className="mt-6">
+          <p className="mt-6 text-sm">
             Every voice and every action counts, and you too can help by
             engaging your communities to advocate the key role of gender
             equality in empowering women and girls to take the lead on global
             land restoration and drought resilience efforts. We invite you to
             discover more and join! All of us can do our part:
           </p>
-          <p className="mt-6">
-            All of us can do our part:
-          </p>
-          <ul className="list-disc	ml-6">
+          <p className="mt-6">All of us can do our part:</p>
+          <ul className="list-disc mb-10 ml-6">
             <li>
               Governments can promote laws, policies and practices that end
               discrimination and secure women’s rights to land and resources.
@@ -59,7 +67,17 @@ function CampaignVideo() {
             </li>
             <li>
               All of us can support women-led initiatives in land restoration
-              and join our call to action.
+              and
+              <a
+                href="https://www.unccd.int/convention/overview"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                {" "}
+                join our call to action
+              </a>
+              .
             </li>
           </ul>
         </div>

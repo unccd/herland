@@ -3,12 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-snap-type: y proximity;
-}
-section {
-  scroll-snap-align: start;
-}
+ 
 html {
   overflow-x: hidden;
 }
@@ -23,7 +18,7 @@ body {
   filter: invert(1);
 }
 .wrapper-404 {
-  background-image: url('./static/images/Sarangerel-Mongolia.jpg');  
+  background-image: url('./static/images/landing-background.jpg');  
   /* filter: grayscale(100%); Apply black and white effect    */
 }
  

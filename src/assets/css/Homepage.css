@@ -19,12 +19,6 @@
   top: 0;
   left: 0;
 }
-.overlay-close-icon {
-  width: 4em;
-  height: 4em ;
-  cursor: pointer;
-  justify-self: center;
-}
 .overlay-arrow {
   transform: scale(4);
   opacity: 0.5;
@@ -61,6 +55,12 @@ section {
   left: 0;
   z-index: 2;
 }
+.panel-fixed-tall .panel-inner {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
 .panel-taller {
   position: relative ;
   z-index: 5;
@@ -76,23 +76,8 @@ iframe {
   height: 100%;
 }
 /*  LANDING */
-.video-wrapper {
-  display: block;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-video {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  max-width: none;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background-size: cover;
-  overflow: hidden;
+.landing-background {
+  background: url('../../static/images/landing-background.jpg') no-repeat center center;
 }
 
 /* PORTRAIT-CAROUSEL */
@@ -122,7 +107,7 @@ video {
 
 /*  DESERT  */
 .desert-logo {
-  background-image: url("../../static/images/Sarangerel-Mongolia.jpg");
+  background: url("../../static/images/stories.jpg") no-repeat center center;
 }
 
 /* VideoExhibition */
@@ -152,16 +137,45 @@ video {
   transform: scale(1.05);
 }
 
-/* FOOTER */
-.footer-background {
-  background-image: url("../../static/portraits/Maya-India.jpg");
-  background-size: cover;
-  background-position: 10% 10%;
+/* campaign toolkit */
+.campaign-toolkit-background {
+  background: url("../../static/images/campaign-toolkit.jpg") no-repeat left center;
+   
 }
 
+/* footer */
+ 
+.event-wrapper {
+  width: 391px !important;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-radius: 1px;
+} 
+.event-wrapper:hover {
+  padding-left: 3em;
+}
+.event-1 {
+  background: url("../../static/events/event-1.png") no-repeat left center;
+}
+.event-2 {
+  background: url("../../static/events/event-2.png") no-repeat left center;
+}
+.event-3 {
+  background: url("../../static/events/event-3.png") no-repeat left center;
+}
+.copywright {
+  min-height: unset;
+  padding: 0 5em;
+}
 @media only screen and (min-width: 0px) and (max-width: 640px) {
   section {
     padding: 0 1em;
+  }
+  .copywright {
+    padding: 0 1em;
+  }
+  .event-wrapper {
+    width: 90vw !important;
   }
   #unccd-logo {
     position: fixed;
@@ -178,10 +192,6 @@ video {
 }
 /* Healv3rse */
 .healverse-background {
-
-  /* background-image: url('../../static/images/healverse-vector.png');
-  background-position: bottom;
-  background-repeat: no-repeat; */
   background: linear-gradient( #002257, #460057);
   ;
 }
@@ -189,4 +199,26 @@ video {
   display: block;
   width: 100vw;
   z-index: 1;
+}
+
+/* detect when the user is on mobile */
+ @media (hover:none), (hover:on-demand){ 
+  .landing-background {
+    background: url('../../static/images/landing-background-mobile.jpg')  no-repeat left bottom; 
+    background-size: cover;
+  }
+  .landing-text {
+    color:#222;
+    margin-bottom: 5Vh;
+    font-size: 6em !important;
+  }
+  .landing-text-hidden {
+    display: none
+  }
+  .landing-down-arrow-mobile {
+    filter: invert(0);
+  }
+  .desert-logo {
+    background: url("../../static/images/stories.jpg") no-repeat 60% center;
+  }
 }
