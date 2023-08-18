@@ -61,7 +61,7 @@ function VideoExhibition(props) {
           </div>
           <h3 className={nameClassNames}>Suhucam</h3>
           <p className={descriptionClassNames}>
-            Igniting Change in Bamunkumbit, Cameroon{" "}
+            Igniting Change in Bamunkumbit, Cameroon
           </p>
         </div>
         <div className="my-6">

@@ -16,7 +16,7 @@ function CampaignVideo() {
         </div>
         <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 lg:ml-6 max-xs:ml-6 mb-10 font-light">
           <p>
-            Together with partners, activists and influencers,{" "}
+            Together with partners, activists and influencers,
             <a
               href="https://www.unccd.int/convention/overview"
               target="_blank"
@@ -24,17 +24,16 @@ function CampaignVideo() {
               className="underline"
             >
               UNCCD
-            </a>{" "}
-            is spearheading the campaign{" "}
+            </a>
+            is spearheading the campaign
             <a
               href="https://trello.com/b/AuQjCPfN/unccd-herland-campaign"
               target="_blank"
               rel="noopener noreferrer"
               className="underline"
             >
-              {" "}
               #HerLand
-            </a>{" "}
+            </a>
             to promote inspiring examples of women and girls’ leadership in
             sustainable land management, mobilizing support to secure land
             rights for women and girls across the world.
@@ -74,8 +73,7 @@ function CampaignVideo() {
                 rel="noopener noreferrer"
                 className="underline"
               >
-                {" "}
-                join our call to action
+                &nbsp; join our call to action
               </a>
               .
             </li>

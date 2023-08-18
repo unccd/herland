@@ -11,9 +11,7 @@ function Healverse() {
         </h2>
       </div>
       <div className="grid grid-cols-12 mt-10 gap-6">
-        <div
-          className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner iframe-wrapper"
-        >
+        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner iframe-wrapper">
           <iframe
             src="https://www.youtube.com/embed/VbMddmxlApU?rel=0&modestbranding=1"
             title="YouTube Video"
@@ -27,7 +25,7 @@ function Healverse() {
             Embark on a journey unlike any other in the world of HEALV3RSE. We
             invite you to explore, learn, and contribute to the fight against
             desertification, land degradation, and drought in a cutting-edge
-            Metaverse experience. Here's what awaits you:{" "}
+            Metaverse experience. Here's what awaits you:
             <a
               href="https://youtu.be/VbMddmxlApU"
               target="_blank"
@@ -50,7 +48,7 @@ function Healverse() {
             The HEALV3RSE experience is a bold step towards reimagining how we
             connect, learn, and take action for a better world. Join us in this
             innovative space where technology, nature, and human ingenuity meet
-            to inspire change and healing for our planet.{" "}
+            to inspire change and healing for our planet.
           </p>
           <a
             href="https://trello.com/b/AuQjCPfN/unccd-herland-campaign flex"

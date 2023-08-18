@@ -4,7 +4,7 @@ import importAllSmallPortraits from "./importPortraits";
 import PortraitOverlay from "../../overlays/PortraitOverlay";
 import { useState } from "react";
 
-function PortraitCarousel(props) {
+function PhotoExhibition(props) {
   const { setIsOverlayActive, setPortraitSrc } = props;
   const openOverlay = (portraitSrc) => {
     setIsOverlayActive(true);
@@ -48,7 +48,7 @@ function PortraitCarousel(props) {
         <div className="grid grid-cols-12 text-black">
           <p className="max-sm:text-base lg:text-base 2xl:text-2xl  font-light mt-8 md:col-span-8 sm:col-span-12 max-sm:col-span-12" >
             Experience the strength and beauty of women across continents in our
-            exclusive 'Women & Land' photo exhibition. Curated by{" "}
+            exclusive 'Women & Land' photo exhibition. Curated by
             <a
               href="https://www.unccd.int/convention/land-ambassadors/inna-modja"
               target="_blank"
@@ -91,4 +91,4 @@ function PortraitCarousel(props) {
   );
 }
 
-export default PortraitCarousel;
+export default PhotoExhibition;

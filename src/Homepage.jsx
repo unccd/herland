@@ -2,10 +2,10 @@ import { useEffect, useState, useRef } from "react";
 import "./assets/css/Homepage.css";
 import LandingPanel from "./slides/Landing/LandingPanel";
 import CampaignVideo from "./slides/CampaignVideo/CampaignVideo";
-import PortraitCarousel from "./slides/PortraitCarousel/PortraitCarousel";
+import PhotoExhibition from "./slides/PhotoExhibition/PhotoExhibition";
 import HerlandStories from "./slides/HerlandStories/HerlandStories";
 import VideoExhibiton from "./slides/VideoExhibition/VideoExhibition";
-import Footer from "./slides/Footer/Footer";
+import Events from "./slides/Events/Events";
 import UnccdLogoBlack from "./static/logos/unccd-black.svg";
 import UnccdLogoWhite from "./static/logos/unccd-white.svg";
 import CampaignToolkit from "./slides/CampaignToolkit/CampaignToolkit";
@@ -13,6 +13,7 @@ import VirtualExhibition from "./slides/VirtualExhibition/VirtualExhibition";
 import PortraitOverlay from "./overlays/PortraitOverlay";
 import VideoOverlay from "./overlays/VideoOverlay";
 import Healverse from "./slides/Healverse/Healverse";
+import Footer from "./slides/Footer/Footer";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -58,7 +59,6 @@ function Homepage() {
     const panelsY = Array.from(panels).map(
       (panel) => panel.offsetTop + panel.offsetHeight
     );
- 
 
     // Bind our function to window scroll
     _window.addEventListener("scroll", updateWindow);
@@ -66,12 +66,13 @@ function Homepage() {
     if (isPanelsTallerThanWindow) {
       _window.removeEventListener("scroll", updateWindow);
       Array.from(document.querySelectorAll(".panel")).map((panel) => {
-        const clearPanelClassList = panel.className.replace("panel-fixed", "").replace("panel-taller", "");
+        const clearPanelClassList = panel.className
+          .replace("panel-fixed", "")
+          .replace("panel-taller", "");
         panel.className = clearPanelClassList;
         return panel;
       });
-      // alert(viewportWidth)
-      isPanelsTallerThanWindow = false
+      isPanelsTallerThanWindow = false;
     }
     // Update the window
     function updateWindow() {
@@ -92,16 +93,6 @@ function Homepage() {
         }
       }
 
-      // Update classes
-      // panels.forEach((panel, index) => {
-      //   if (index === i) {
-      //     changeLogoColor(panel.classList);
-
-      //     panel.classList.add("panel-fixed");
-      //   } else {
-      //     panel.classList.remove("panel-fixed");
-      //   }
-      // });
       panels.forEach((panel, index) => {
         if (index === i) {
           changeLogoColor(panel.classList);
@@ -146,7 +137,7 @@ function Homepage() {
         <HerlandStories />
       </div>
       <div className="panel unccd-logo-black">
-        <PortraitCarousel
+        <PhotoExhibition
           setIsOverlayActive={setIsPortraitOverlayActive}
           setPortraitSrc={setOverlayPortraitSrc}
         />
@@ -164,11 +155,9 @@ function Homepage() {
         <Healverse />
       </div>
       <div className="panel unccd-logo-black">
-        <Footer />
+        <Events />
       </div>
-      <section className="copywright bg-gray-950 text-white py-4">
-        <p className="text-xs"> ©UNCCD 2023</p>
-      </section>
+      <Footer />
       <img
         id="unccd-logo"
         src={UNCCD_LOGO}
