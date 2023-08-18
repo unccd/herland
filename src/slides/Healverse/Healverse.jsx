@@ -51,7 +51,7 @@ function Healverse() {
             to inspire change and healing for our planet.
           </p>
           <a
-            href="https://trello.com/b/AuQjCPfN/unccd-herland-campaign flex"
+            href="https://trello.com/b/AuQjCPfN/unccd-herland-campaign"
             target="_blank"
           >
             <div className="flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer">

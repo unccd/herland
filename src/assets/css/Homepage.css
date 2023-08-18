@@ -167,11 +167,23 @@ iframe {
   padding: 0 5em;
   min-height: unset;
 }
+/* Healv3rse */
+.healverse-background {
+  background: linear-gradient(#002257, #460057);
+}
+.iframe-wrapper {
+  position: relative !important;
+}
 /* herland cta  */
 .herland-cta {
   background: url("../../static/images/call-to-action.jpg") no-repeat right center;
   background-color: #4D4399;
 }
+/* pledges */
+.pledge-card {
+   aspect-ratio: 1/1; 
+ }
+ 
 @media only screen and (min-width: 0px) and (max-width: 640px) {
   section {
     padding: 0 1em;
@@ -195,13 +207,7 @@ iframe {
     gap: 2em;
   }
 }
-/* Healv3rse */
-.healverse-background {
-  background: linear-gradient(#002257, #460057);
-}
-.iframe-wrapper {
-  position: relative !important;
-}
+
 
 /* detect when the user is on mobile */
 @media (hover: none), (hover: on-demand) {

@@ -126,9 +126,9 @@ function Homepage() {
       <div className="panel unccd-logo-white">
         <HerlandCTA />
       </div>
-      {/* <div className="panel unccd-logo-white">
+      <div className="panel unccd-logo-black">
         <Pledges />
-      </div> */}
+      </div>
       <div className="panel unccd-logo-black">
         <CampaignToolkit />
       </div>

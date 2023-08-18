@@ -7,7 +7,7 @@ function VirtualExhibition() {
     <section className="bg-white panel-inner grid grid-cols-2 gap- h-full">
       <div className="lg:col-span-1  flex items-center sm:col-span-2 max-sm:col-span-2">
         <div className="font-light mt-32 md:mr-16 sm:mr-4 max-sm:mr-0">
-          <h2 className="sm:text-2xl xs:text-3xl md:text-4xl lg:text-5xl  max-xs:text-2xl font-light  ">
+          <h2 className="sm:text-2xl xs:text-3xl md:text-4xl lg:text-5xl  max-sm:text-2xl font-light  ">
             Interactive virtual exhibition
           </h2>
           <p className="max-sm:text-base lg:text-base 2xl:text-2xl  text-gray-700  mt-8">

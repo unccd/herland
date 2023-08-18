@@ -1,6 +1,6 @@
 function CampaignVideo() {
   return (
-    <section className="full-height bg-zinc-950 text-white panel-inner grid content-center	">
+    <section className="full-height bg-indigo-900 text-white panel-inner grid content-center	">
       <div className="grid grid-cols-12 mt-24 gap-6 ">
         <div
           className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner relative "
@@ -16,7 +16,7 @@ function CampaignVideo() {
         </div>
         <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 lg:ml-6 max-xs:ml-6 mb-10 font-light">
           <p>
-            Together with partners, activists and influencers,
+            Together with partners, activists and influencers,&nbsp;
             <a
               href="https://www.unccd.int/convention/overview"
               target="_blank"
@@ -25,7 +25,7 @@ function CampaignVideo() {
             >
               UNCCD
             </a>
-            is spearheading the campaign
+            &nbsp; is spearheading the campaign&nbsp;
             <a
               href="https://trello.com/b/AuQjCPfN/unccd-herland-campaign"
               target="_blank"
@@ -34,8 +34,8 @@ function CampaignVideo() {
             >
               #HerLand
             </a>
-            to promote inspiring examples of women and girls’ leadership in
-            sustainable land management, mobilizing support to secure land
+            &nbsp; to promote inspiring examples of women and girls’ leadership
+            in sustainable land management, mobilizing support to secure land
             rights for women and girls across the world.
           </p>
           <p className="mt-6 text-sm">
@@ -66,14 +66,14 @@ function CampaignVideo() {
             </li>
             <li>
               All of us can support women-led initiatives in land restoration
-              and
+              and&nbsp;
               <a
                 href="https://www.unccd.int/convention/overview"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
               >
-                &nbsp; join our call to action
+                join our call to action
               </a>
               .
             </li>

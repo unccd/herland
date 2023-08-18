@@ -2,7 +2,7 @@ import React from "react";
 
 function Events() {
   return (
-    <section className="full-height bg-gray-200 flex flex-col justify-around panel-inner">
+    <section className="full-height bg-stone-200 flex flex-col justify-around panel-inner">
       <div className="text-black mt-20">
         <h2 className="max-sm:text-2xl text-4xl font-light">Events </h2>
         <p className="max-sm:text-base text-2xl font-light mt-6">
