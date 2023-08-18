@@ -97,9 +97,9 @@ function Pledges() {
 
   return (
     <section className="panel-inner grid grid-cols-12 items-center  bg-white">
-      <div className="col-span-12 grid grid-cols-12 gap-4   mt-10 max-sm:mt-12 mb-32 max-sm:mb-50">
+      <div className="col-span-12 grid grid-cols-12 gap-4 mt-6 max-sm:mt-12 mb-10 max-sm:mb-50">
         <div className="col-span-12">
-          <h2 className="max-sm:text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl lg:my-16 md:mt-32">
+          <h2 className="max-sm:text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl lg:mt-16 md:mt-32">
             Global leaders call to action on women’s land rights{" "}
           </h2>
           <p className="font-light mt-6 max-sm:text-base sm:text-xl">

@@ -1,15 +1,15 @@
 import React from "react";
 
 function HerlandCTA() {
-  const pClassName = "mt-6";
+  const pClassName = "md:text-base lg:text-sm mt-6";
   return (
     <section className="panel-inner grid grid-cols-12 items-center   herland-cta">
-      <div className="col-span-12 grid grid-cols-12 gap-4 text-white mt-10 max-sm:mt-12 mb-32 max-sm:mb-50">
+      <div className="col-span-12 grid grid-cols-12 gap-4 text-white mt-10 max-sm:mt-12 lg:mb-10 md:mb-32 max-sm:mb-50">
         <div className="col-span-12">
-          <h2 className="max-sm:text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl lg:my-16 md:mt-32">
+          <h2 className="max-sm:text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl lg:mt-16 md:mt-32">
             HerLand call to action
           </h2>
-          <h3 className="max-sm:text-base sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-bold max-sm:mt-4 sm:mt-6 md:mt-10 lg:m-0">
+          <h3 className="max-sm:text-base sm:text-2xl md:text-2xl lg:text-xl xl:text-3xl font-bold max-sm:mt-4 sm:mt-6 md:mt-10 lg:m-0">
             Make women's land rights a reality
           </h3>
         </div>
