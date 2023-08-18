@@ -20,7 +20,7 @@ function VirtualExhibition() {
             href="https://www.spatial.io/s/UNCCD-desertification-and-drought-day-647fac7fd64fd8e8d68f2e98?share=3481878158271637714"
             target="_blank"
           >
-            <div className="flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer text-blue-700">
+            <div className="flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer text-violet-700">
               <img src={ArrowRight} className="icon scale-150" />
               <p className="sm:text-xl md:text-2xl m-0">Enter the exhibition</p>
             </div>

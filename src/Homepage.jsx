@@ -14,7 +14,9 @@ import PortraitOverlay from "./overlays/PortraitOverlay";
 import VideoOverlay from "./overlays/VideoOverlay";
 import Healverse from "./slides/Healverse/Healverse";
 import Footer from "./slides/Footer/Footer";
- 
+import HerlandCTA from "./slides/HerlandCTA/HerlandCTA";
+import Pledges from "./slides/Plegdes/Pledges";
+
 function Homepage() {
   const [isPortraitOverlayActive, setIsPortraitOverlayActive] = useState(false);
   const [overlayPortraitSrc, setOverlayPortraitSrc] = useState("");
@@ -22,7 +24,7 @@ function Homepage() {
   const [overlayVideoSrc, setOverlayVideoSrc] = useState("");
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [UNCCD_LOGO, SET_UNCCD_LOGO] = useState(UnccdLogoWhite);
-  
+
   const changeLogoColor = (currentPanel) => {
     if (currentPanel.contains("unccd-logo-white")) {
       SET_UNCCD_LOGO(UnccdLogoWhite);
@@ -111,7 +113,6 @@ function Homepage() {
       window.removeEventListener("resize", handleResize);
       _window.removeEventListener("scroll", updateWindow);
     };
- 
   }, [viewportWidth]);
 
   return (
@@ -122,6 +123,12 @@ function Homepage() {
       <div className="panel unccd-logo-white">
         <CampaignVideo />
       </div>
+      <div className="panel unccd-logo-white">
+        <HerlandCTA />
+      </div>
+      {/* <div className="panel unccd-logo-white">
+        <Pledges />
+      </div> */}
       <div className="panel unccd-logo-black">
         <CampaignToolkit />
       </div>

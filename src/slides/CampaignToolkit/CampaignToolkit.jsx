@@ -27,7 +27,7 @@ function CampaignToolkit() {
           href="https://trello.com/b/AuQjCPfN/unccd-herland-campaign"
           target="_blank"
         >
-          <div className="flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer text-blue-700	">
+          <div className="flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer text-violet-700	">
             <img src={ArrowRight} className="icon scale-150" />
             <p className="max-sm:text-xl lg:text-xl 2xl:text-2xl  md:text-2xl m-0">
               Link to promotional materials

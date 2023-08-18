@@ -13,10 +13,15 @@ function HerlandStories() {
           shape the #HerLand campaign. Explore the various elements that
           together create a tapestry of inspiration and awareness.
         </p>
-        <div className="flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer sm:pt-20 max-sm:pt-10">
-          <img src={ArrowRight} className="icon icon-white scale-150" />
-          <p className="sm:text-xl md:text-2xl m-0">Submit your story here</p>
-        </div>
+        <a
+          href="https://www.unccd.int/land-and-life/gender/herland/share-your-story"
+          target="_blank"
+        >
+          <div className="flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer">
+            <img src={ArrowRight} className="icon icon-white scale-150" />
+            <p className="sm:text-xl md:text-2xl m-0">Submit your story here</p>
+          </div>
+        </a>
       </div>
     </section>
   );
