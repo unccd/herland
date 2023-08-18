@@ -1,9 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import importAllSmallPortraits from "./importPortraits";
-import PortraitOverlay from "../../overlays/PortraitOverlay";
-import { useState } from "react";
-
+ 
 function PhotoExhibition(props) {
   const { setIsOverlayActive, setPortraitSrc } = props;
   const openOverlay = (portraitSrc) => {

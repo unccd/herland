@@ -1,4 +1,3 @@
-import introVideo from "../../static/videos/intro.mp4";
 import DownArrow from "../../static/icons/arrow-down.svg";
 
 function LandingPanel() {

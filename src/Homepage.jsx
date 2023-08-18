@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import "./assets/css/Homepage.css";
 import LandingPanel from "./slides/Landing/LandingPanel";
 import CampaignVideo from "./slides/CampaignVideo/CampaignVideo";
@@ -14,17 +14,15 @@ import PortraitOverlay from "./overlays/PortraitOverlay";
 import VideoOverlay from "./overlays/VideoOverlay";
 import Healverse from "./slides/Healverse/Healverse";
 import Footer from "./slides/Footer/Footer";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
+ 
 function Homepage() {
   const [isPortraitOverlayActive, setIsPortraitOverlayActive] = useState(false);
   const [overlayPortraitSrc, setOverlayPortraitSrc] = useState("");
   const [isVideoOverlayActive, setIsVideoOverlayActive] = useState(false);
   const [overlayVideoSrc, setOverlayVideoSrc] = useState("");
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-
   const [UNCCD_LOGO, SET_UNCCD_LOGO] = useState(UnccdLogoWhite);
+  
   const changeLogoColor = (currentPanel) => {
     if (currentPanel.contains("unccd-logo-white")) {
       SET_UNCCD_LOGO(UnccdLogoWhite);
@@ -39,10 +37,6 @@ function Homepage() {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-
-    // Clean up the event listener when component unmounts
-
-    // Set up vars
     let isPanelsTallerThanWindow = false;
     const _window = window;
     const initialPanels = document.querySelectorAll(".panel");
@@ -112,14 +106,12 @@ function Homepage() {
     }
     // _window.removeEventListener("scroll", updateWindow);
 
+    // // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
       _window.removeEventListener("scroll", updateWindow);
     };
-    // // Cleanup event listener on component unmount
-    // return () => {
-    //   _window.removeEventListener("scroll", updateWindow);
-    // };
+ 
   }, [viewportWidth]);
 
   return (
