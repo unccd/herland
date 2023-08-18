@@ -6,25 +6,24 @@ function Healverse() {
   return (
     <section className="full-height panel-inner flex flex-col  justify-content-center text-white  healverse-background">
       <div>
-        <h2 className="max-sm:text-xl sm:text-3xl mt-24">
+        <h2 className="max-sm:text-xl sm:text-2xl mt-14">
           Web3/Metaverse Experience (HEALV3RSE)
         </h2>
       </div>
-      <div className="grid grid-cols-12 mt-10">
+      <div className="grid grid-cols-12 mt-10 gap-6">
         <div
-          className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner relative h-3/6"
-          style={{ position: "relative", height: "100%" }}
+          className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner iframe-wrapper"
         >
           <iframe
-            src="https://www.youtube.com/embed/VbMddmxlApU?rel=0&modestbranding=1&fs=0"
+            src="https://www.youtube.com/embed/VbMddmxlApU?rel=0&modestbranding=1"
             title="YouTube Video"
             allowFullScreen
             height={"100%"}
             width={"100%"}
           />
         </div>
-        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 lg:ml-6 max-sm:ml- mt-6 mb-6 font-light">
-          <p>
+        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 lg:ml-6 max-sm:ml-0 mb-6 font-light">
+          <p className="max-sm:text-base lg:text-base 2xl:text-2xl">
             Embark on a journey unlike any other in the world of HEALV3RSE. We
             invite you to explore, learn, and contribute to the fight against
             desertification, land degradation, and drought in a cutting-edge
@@ -37,10 +36,10 @@ function Healverse() {
               https://youtu.be/VbMddmxlApU
             </a>
           </p>
-          <h3 className="max-sm:text-base mt-6 text-lg font-bold">
+          <h3 className="max-sm:text-base lg:text-base 2xl:text-2xl mt-6 font-bold">
             How to Access & Participate
           </h3>
-          <p className="mt-6 max-sm:text-sm sm:text-base">
+          <p className="max-sm:text-base lg:text-base 2xl:text-2xl mt-6">
             Joining HEALV3RSE is simple and open to all. Whether you're a
             seasoned gamer or new to virtual worlds, we provide an accessible
             platform that thrills, educates, and empowers. Set up your virtual

@@ -6,11 +6,11 @@ function LandingPanel() {
     <section className="full-height text-white video-wrapper panel-inner landing-background">
       <div className="slide-content full-height flex flex-col content-end justify-end">
         <div className="flex flex-col">
-          <h2 className="max-sm:text-7xl text-9xl font-bold mb-32  landing-text ">
+          <h2 className="max-sm:text-7xl md:text-7xl xl:text-7xl 2xl:text-9xl sm:text-6xl font-bold mt-20 mb-10  landing-text ">
             HER <br></br>
             LAND
           </h2>
-          <div className="md:text-2xl lg:text-3xl mb-32 landing-text-hidden">
+          <div className="md:text-2xl 2xl:text-3xl lg:text-1xl sm:text-xl mb-32 landing-text-hidden">
             <p>For the land she provides, and in return, she's provided for.</p>
             <p>They are both nourished, intertwined, a tapestry old as time.</p>
             <p className="font-bold mt-10">

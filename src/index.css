@@ -19,6 +19,7 @@ body {
 }
 .wrapper-404 {
   background-image: url('./static/images/landing-background.jpg');  
+  background-size: cover;
   /* filter: grayscale(100%); Apply black and white effect    */
 }
  

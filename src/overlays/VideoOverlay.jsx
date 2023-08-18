@@ -14,7 +14,7 @@ function VideoOverlay(props) {
           <iframe
             width="100%"
             height="100%"
-            src={`https://www.youtube.com/embed/${url}?rel=0&modestbranding=1&fs=0`}
+            src={`https://www.youtube.com/embed/${url}?rel=0&modestbranding=1`}
             allowFullScreen
             modestbranding={1}
           ></iframe>

@@ -13,15 +13,16 @@ function VideoExhibition(props) {
   };
 
   const nameClassNames =
-    "max-xs:text-xl xs:text-xl md:text-3xl font-light mt-6";
+    "max-xs:text-2xl xs:text-xl md:text-3xl font-light mt-6";
   const descriptionClassNames =
     "max-xs:text-base xs:text-base md:text-lg font-light mt-2";
+
   return (
     <section className="full-height bg-gray-950 text-white flex flex-col panel-inner">
-      <h2 className="xs:text-3xl md:text-4xl lg:text-5xl pt-40 font-light  ">
-        Video-Art Exhibition: "TransNature" #HerLand{" "}
+      <h2 className="max-sm:text-2xl sm:text-3xl lg:text-5xl pt-40 font-light  ">
+        Video-Art Exhibition: "TransNature" #HerLand
       </h2>
-      <p className="xs:text-lg md:text-xl lg:text-2xl pt-10 font-light  ">
+      <p className="max-sm:text-base lg:text-base 2xl:text-2xl  pt-10 font-light  ">
         Discover a unique fusion of nature, technology, and art in the
         'TransNature' video-art exhibition. Five short loops invite you to
         reflect on our environment's transformation, interconnectedness, and the

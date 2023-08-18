@@ -70,7 +70,8 @@ function Homepage() {
         panel.className = clearPanelClassList;
         return panel;
       });
-
+      // alert(viewportWidth)
+      isPanelsTallerThanWindow = false
     }
     // Update the window
     function updateWindow() {
@@ -165,7 +166,7 @@ function Homepage() {
       <div className="panel unccd-logo-black">
         <Footer />
       </div>
-      <section class="copywright bg-gray-950 text-white py-4">
+      <section className="copywright bg-gray-950 text-white py-4">
         <p className="text-xs"> ©UNCCD 2023</p>
       </section>
       <img

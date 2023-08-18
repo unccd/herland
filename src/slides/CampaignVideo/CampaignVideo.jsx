@@ -7,14 +7,14 @@ function CampaignVideo() {
           style={{ position: "relative", height: "100%" }}
         >
           <iframe
-            src="https://www.youtube.com/embed/b_0rx56VCak?rel=0&modestbranding=1&fs=0"
+            src="https://www.youtube.com/embed/b_0rx56VCak?rel=0&modestbranding=1"
             title="YouTube Video"
             allowFullScreen
             height={"100%"}
             width={"100%"}
           />
         </div>
-        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 ml-6 mb-10 font-light">
+        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 lg:ml-6 max-xs:ml-6 mb-10 font-light">
           <p>
             Together with partners, activists and influencers,{" "}
             <a
@@ -47,7 +47,7 @@ function CampaignVideo() {
             discover more and join! All of us can do our part:
           </p>
           <p className="mt-6">All of us can do our part:</p>
-          <ul className="list-disc mb-10 ml-6">
+          <ul className="list-disc mb-10 ml-6 text-sm">
             <li>
               Governments can promote laws, policies and practices that end
               discrimination and secure women’s rights to land and resources.

@@ -12,8 +12,8 @@ function Footer() {
         <p className="max-sm:text-base text-2xl font-light mt-6">
           Here are some events where you can view the HerLand Campaign:
         </p>
-        <div className="grid lg:grid-cols-12 sm:grid-cols-1 max-sm:grid-cols-1">
-          <div className="grid lg:grid-cols-2 md:grid-cols-1 max-sm:grid-cols-1 gap-4 mt-10 footer-events col-span-10">
+        <div className="grid 2xl:grid-cols-12 xsm:grid-cols-1 max-sm:grid-cols-1">
+          <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 max-sm:grid-cols-1 gap-4 mt-10 footer-events col-span-10">
             <div className="event-wrapper event-1 max-sm:h-24 sm:h-32 flex flex-col justify-center pl-2">
               <a
                 href="https://www.unccd.int/events/desertification-drought-day/2023"
@@ -60,13 +60,12 @@ function Footer() {
       </div>
       <div className="text-black justify-self-end	">
         <h2 className="max-sm:text-2xl text-4xl font-light">
-          Contact & Support{" "}
+          Contact & Support
         </h2>
 
         <p className="mt-6">
           Contact Information:
           <a className="text-blue-700" href="mailto:herland@unccd.int">
-            {" "}
             herland@unccd.int
           </a>
         </p>

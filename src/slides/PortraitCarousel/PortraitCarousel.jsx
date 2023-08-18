@@ -42,11 +42,11 @@ function PortraitCarousel(props) {
   return (
     <section className="full-height bg-white flex flex-column justify-around panel-inner">
       <div className="font-light">
-        <p className="max-sm:text-2xl text-5xl font-light text-black pt-32">
+        <h2 className="max-sm:text-base sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-light text-black pt-32">
           #HerLand Photo Exhibition
-        </p>
+        </h2>
         <div className="grid grid-cols-12 text-black">
-          <p className="max-sm:text-base text-2xl font-light mt-8 md:col-span-8 sm:col-span-12 max-sm:col-span-12" >
+          <p className="max-sm:text-base lg:text-base 2xl:text-2xl  font-light mt-8 md:col-span-8 sm:col-span-12 max-sm:col-span-12" >
             Experience the strength and beauty of women across continents in our
             exclusive 'Women & Land' photo exhibition. Curated by{" "}
             <a

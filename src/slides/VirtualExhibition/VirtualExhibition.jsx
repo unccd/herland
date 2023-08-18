@@ -4,13 +4,13 @@ import ArrowRight from "../../static/icons/arrow-right.svg";
 
 function VirtualExhibition() {
   return (
-    <section className="bg-white panel-inner grid grid-cols-2 h-full">
+    <section className="bg-white panel-inner grid grid-cols-2 gap- h-full">
       <div className="lg:col-span-1  flex items-center sm:col-span-2 max-sm:col-span-2">
         <div className="font-light mt-32">
-          <h2 className=" xs:text-3xl md:text-4xl lg:text-5xl  max-xs:text-2xl font-light  ">
+          <h2 className="sm:text-2xl xs:text-3xl md:text-4xl lg:text-5xl  max-xs:text-2xl font-light  ">
             Interactive virtual exhibition
           </h2>
-          <p className="text-gray-700 xs:text-xl md:text-xl lg:text-2xl mt-8">
+          <p className="max-sm:text-base lg:text-base 2xl:text-2xl  text-gray-700  mt-8">
             You are also invited to access UNCCD's interactive virtual
             exhibition for Desertification & Drought Day on spatial.io. You will
             be able to create a free account, then choose or create an avatar
