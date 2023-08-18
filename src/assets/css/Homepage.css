@@ -202,7 +202,7 @@ iframe {
 }
 
 /* detect when the user is on mobile */
-/* @media (hover: none), (hover: on-demand) {
+@media (hover: none), (hover: on-demand) {
   .landing-background {
     background: url("../../static/images/landing-background-mobile.jpg")
       no-repeat left bottom;
@@ -236,4 +236,4 @@ iframe {
     left: 1em;
     transform: scale(0.9);
   }
-} */
+}
