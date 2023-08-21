@@ -19,7 +19,7 @@ function VideoExhibition(props) {
 
   return (
     <section className="full-height bg-gray-950 text-white flex flex-col panel-inner">
-      <h2 className="max-sm:text-2xl sm:text-3xl lg:text-5xl pt-40 font-light  ">
+      <h2 className="max-sm:text-2xl sm:text-3xl lg:text-5xl pt-32 font-light  ">
         Video-Art Exhibition: "TransNature" #HerLand
       </h2>
       <p className="max-sm:text-base lg:text-base 2xl:text-2xl  pt-10 font-light  ">

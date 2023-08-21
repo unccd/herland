@@ -28,7 +28,7 @@ function VirtualExhibition() {
         </div>
       </div>
 
-      <div className="lg:col-span-1  flex items-center py-8 sm:col-span-2 max-sm:col-span-2 ">
+      <div className="lg:col-span-1  flex items-center p-8 sm:col-span-2 max-sm:col-span-2 ">
         <img
           src={videoExhibitionImg}
           alt="Video Exhibition"

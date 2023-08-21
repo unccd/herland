@@ -9,12 +9,12 @@ function Pledge(props) {
     <div className="pledge-card bg-violet-800 text-white grid content-between sm:p-4 md:p-8 max-sm:p-4 m-2">
       <div>
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="max-sm:text-sm md:text-sm mb-2">{paragraph}</p>
+          <p key={index} className="max-sm:text-sm md:text-sm mb-2 2xl:text-lg">{paragraph}</p>
         ))}
       </div>
       <div className="text-right">
-        <h3 className="sm:text-xl md:text-lg max-sm:text-xl">{author}</h3>
-        <h4 className="sm:text-base md:text-base font-light">{authorOccupation}</h4>
+        <h3 className="xl:text-2xl g:text- xl sm:text-xl md:text-base max-sm:text-xl">{author}</h3>
+        <h4 className="xl:text-xl lg:text-base sm:text-base md:text-small font-light">{authorOccupation}</h4>
       </div>
     </div>
   );
@@ -110,7 +110,7 @@ function Pledges() {
           <a href="" target="_blank">
             <div className="flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer text-violet-700">
               <img src={ArrowRight} className="icon scale-150" />
-              <p className="font-bold m-0">Access the portal</p>
+              <p className="font-bold m-0">Add your pledge</p>
             </div>
           </a>
         </div>
