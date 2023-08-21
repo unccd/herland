@@ -13,10 +13,10 @@ function PortraitOverlay(props) {
       onClick={closeOverlay}
     >
       <div className="lg:m-10 sm:m-0 max-xs:m-0">
-        <div className="relative p-1 bg-white shadow-lg ">
+        <div className="relative p-1 lg:m-8 md:m-5 sm:m-2 max-xs:m-1 bg-white shadow-lg ">
           <img src={portrait} alt="Overlay" className="w-full h-auto" />
           <button
-            className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+            className="absolute top-3 right-3"
             onClick={closeOverlay}
           >
             <svg

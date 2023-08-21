@@ -3,7 +3,11 @@ import ArrowRight from "../../static/icons/arrow-right.svg";
 import Carousel from "react-multi-carousel";
 import pledgeData from "./pledgeData";
 import "react-multi-carousel/lib/styles.css";
-import { textH2, textBodyLarge, textBodyMedium } from "../../assets/css/fontSizes";
+import {
+  textH2,
+  textBodyLarge,
+  textBodyMedium,
+} from "../../assets/css/fontSizes";
 
 function Pledge(props) {
   const { author, authorOccupation, paragraphs } = props;
@@ -11,12 +15,18 @@ function Pledge(props) {
     <div className="pledge-card bg-violet-800 text-white grid content-between sm:p-4 md:p-8 max-sm:p-4 m-2">
       <div>
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="max-sm:text-sm md:text-sm mb-2 2xl:text-lg">{paragraph}</p>
+          <p key={index} className="max-sm:text-sm md:text-sm mb-2 2xl:text-lg">
+            {paragraph}
+          </p>
         ))}
       </div>
       <div className="text-right">
-        <h3 className="xl:text-2xl g:text- xl sm:text-xl md:text-base max-sm:text-xl">{author}</h3>
-        <h4 className="xl:text-xl lg:text-base sm:text-base md:text-small font-light">{authorOccupation}</h4>
+        <h3 className="xl:text-2xl g:text- xl sm:text-xl md:text-base max-sm:text-xl">
+          {author}
+        </h3>
+        <h4 className="xl:text-xl lg:text-base sm:text-base md:text-small font-light">
+          {authorOccupation}
+        </h4>
       </div>
     </div>
   );
@@ -48,7 +58,7 @@ function Pledges() {
       partialVisibilityGutter: 30,
     },
   };
- 
+
   return (
     <section className="panel-inner grid grid-cols-12 items-center  bg-white">
       <div className="col-span-12 grid grid-cols-12 gap-4  ">

@@ -4,7 +4,12 @@ import SuhucamThumbnail from "../../static/video-thumbnails/2.png";
 import AlvarezThumbnail from "../../static/video-thumbnails/3.png";
 import PlayIcon from "../../static/icons/play-fill.svg";
 import VideoOverlay from "../../overlays/VideoOverlay";
-import { textH2, textBodyLarge, textBodyMedium, textBodyMediumBold } from "../../assets/css/fontSizes";
+import {
+  textH2,
+  textBodyLarge,
+  textBodyMedium,
+  textBodyMediumBold,
+} from "../../assets/css/fontSizes";
 function VideoExhibition(props) {
   const { setIsOverlayActive, setVideoSrc } = props;
   const showVideoOverlay = (url) => {
@@ -12,12 +17,12 @@ function VideoExhibition(props) {
     setIsOverlayActive(true);
   };
 
-  const nameClassNames = `${textBodyMediumBold} mt-6`
-   const descriptionClassNames = `${textBodyMedium} mb-10`
+  const nameClassNames = `${textBodyMediumBold} mt-6`;
+  const descriptionClassNames = `${textBodyMedium} mb-10`;
 
   return (
-    <section className="full-height bg-gray-950 text-white flex flex-col justify-center	 panel-inner">
-      <h2 className={`${textH2} pt-10`}>
+    <section className="full-height bg-gray-950 text-white flex flex-col justify-center	panel-inner ">
+      <h2 className={`${textH2} mt-10`}>
         Video-Art Exhibition: "TransNature" #HerLand
       </h2>
       <p className={`${textBodyLarge} pt-10`}>

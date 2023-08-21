@@ -1,7 +1,11 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import importAllSmallPortraits from "./importPortraits";
-import { textBodyLarge, textBodyMedium, textH2 } from "../../assets/css/fontSizes";
+import {
+  textBodyLarge,
+  textBodyMedium,
+  textH2,
+} from "../../assets/css/fontSizes";
 
 function PhotoExhibition(props) {
   const { setIsOverlayActive, setPortraitSrc } = props;
@@ -41,11 +45,11 @@ function PhotoExhibition(props) {
   return (
     <section className="full-height bg-white flex flex-column justify-around panel-inner">
       <div className="font-light">
-        <h2 className={`${textH2}`}>
-          #HerLand Photo Exhibition
-        </h2>
+        <h2 className={`${textH2}`}>#HerLand Photo Exhibition</h2>
         <div className="grid grid-cols-12 text-black">
-          <p className={`${textBodyLarge}  mt-8 md:col-span-8 sm:col-span-12 max-sm:col-span-12`}>
+          <p
+            className={`${textBodyLarge}  mt-8 md:col-span-8 sm:col-span-12 max-sm:col-span-12`}
+          >
             Experience the strength and beauty of women across continents in our
             exclusive 'Women & Land' photo exhibition. Curated by &nbsp;
             <a

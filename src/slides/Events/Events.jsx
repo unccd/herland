@@ -1,5 +1,9 @@
 import React from "react";
-import { textH2, textBodyLarge, textBodyMedium } from "../../assets/css/fontSizes";
+import {
+  textH2,
+  textBodyLarge,
+  textBodyMedium,
+} from "../../assets/css/fontSizes";
 
 function Events() {
   return (
@@ -56,11 +60,9 @@ function Events() {
         </div>
       </div>
       <div className="text-black justify-self-end	">
-        <h2 className={textH2}>
-          Contact & Support
-        </h2>
+        <h2 className={textH2}>Contact & Support</h2>
 
-        <p className={`${textBodyMedium} mt-6 mb-6`}>
+        <p className={`${textBodyMedium} mt-6 max-sm:mb-6 sm:mb-0`}>
           Contact Information:
           <a className="text-blue-700" href="mailto:herland@unccd.int">
             &nbsp;herland@unccd.int

@@ -1,5 +1,5 @@
 import DownArrow from "../../static/icons/arrow-down.svg";
-import UnccdLogoWhite from '../../static/logos/unccd-white.svg'
+import UnccdLogoWhite from "../../static/logos/unccd-white.svg";
 
 function LandingPanel() {
   return (
