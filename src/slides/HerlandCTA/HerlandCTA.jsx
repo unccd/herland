@@ -15,7 +15,7 @@ function HerlandCTA() {
             Make women's land rights a reality
           </p>
         </div>
-        <div className="col-span-4 xl:col-span-4 lg:col-span-6 md:col-span-10 sm:col-span-12 max-sm:col-span-12 ">
+        <div className="xl:col-span-4 xl:col-span-6 lg:col-span-6 md:col-span-10 sm:col-span-12 max-sm:col-span-12 ">
           <p className={`${pClassName}`}>
             Healthy land is vital for human survival, it is the largest source
             of income, jobs and livelihoods for poor, rural households. It is
@@ -40,7 +40,7 @@ function HerlandCTA() {
             resilience to drought.{" "}
           </p>
         </div>
-        <div className="2xl:col-span-4 xl:col-span-4 lg:col-span-5 md:col-span-10 sm:col-span-12 max-sm:col-span-12">
+        <div className="2xl:col-span-4 xl:col-span-5 lg:col-span-5 md:col-span-10 sm:col-span-12 max-sm:col-span-12">
           <p className={`${pClassName}  xl:mr-0 lg:mr-16 md:mr-0`}>
             Women also invest more in nutrition, health and education which
             benefits their families, and wider societies. That’s why we are

@@ -12,7 +12,7 @@ function Healverse() {
         <h2 className={textH2}>Web3/Metaverse Experience (HEALV3RSE)</h2>
       </div>
       <div className="grid grid-cols-12 mt-10 gap-6">
-        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner iframe-wrapper">
+        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-5 2xl-col-span-6 flex panel-inner iframe-wrapper">
           <iframe
             src="https://www.youtube.com/embed/VbMddmxlApU?rel=0&modestbranding=1"
             title="YouTube Video"
@@ -21,7 +21,7 @@ function Healverse() {
             width={"100%"}
           />
         </div>
-        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 lg:ml-6 max-sm:ml-0 mb-6 font-light">
+        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-7 2xl:col-span-6 lg:ml-6 max-sm:ml-0 mb-6 font-light">
           <p className={`${textBodyMedium} pt-6`}>
             Embark on a journey unlike any other in the world of HEALV3RSE. We
             invite you to explore, learn, and contribute to the fight against
