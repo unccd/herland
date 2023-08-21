@@ -1,16 +1,17 @@
 import React from "react";
 import videoExhibitionImg from "../../static/images/virtual-exhibition.png";
 import ArrowRight from "../../static/icons/arrow-right.svg";
+import { textH2, textBodyLarge } from "../../assets/css/fontSizes";
 
 function VirtualExhibition() {
   return (
     <section className="bg-white panel-inner grid grid-cols-2 gap- h-full">
       <div className="lg:col-span-1  flex items-center sm:col-span-2 max-sm:col-span-2">
-        <div className="font-light mt-32 md:mr-16 sm:mr-4 max-sm:mr-0">
-          <h2 className="sm:text-2xl xs:text-3xl md:text-4xl lg:text-5xl  max-sm:text-2xl font-light  ">
+        <div className="font-light  md:mr-16 sm:mr-4 max-sm:mr-0">
+          <h2 className={`${textH2}`}>
             Interactive virtual exhibition
           </h2>
-          <p className="max-sm:text-base lg:text-base 2xl:text-2xl  text-gray-700  mt-8">
+          <p className={`${textBodyLarge} mt-8`}>
             You are also invited to access UNCCD's interactive virtual
             exhibition for Desertification & Drought Day on spatial.io. You will
             be able to create a free account, then choose or create an avatar

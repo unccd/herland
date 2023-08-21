@@ -1,13 +1,13 @@
 import ArrowRight from "../../static/icons/arrow-right.svg";
-
+import { textH2, textBodyLarge } from "../../assets/css/fontSizes";
 function HerlandStories() {
   return (
     <section className="full-height text-white desert-logo panel-inner grid grid-cols-12">
       <div className="max-sm:col-span-12 sm:col-span-12 md:col-span-6">
-        <h2 className="max-sm:text-2xl text-3xl sm:pt-40 max-sm:pt-32 ">
+        <h2 className={`${textH2} sm:pt-40 max-sm:pt-32`}>
           #HerLand Stories
         </h2>
-        <p className="max-sm:text-xl text-2xl pt-10 font-light">
+        <p className={`${textBodyLarge} my-10`}>
           Do you know an inspiring story about women, girls and land? We
           celebrate and showcase the voices, experiences, and creativity that
           shape the #HerLand campaign. Explore the various elements that

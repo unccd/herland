@@ -1,9 +1,13 @@
 import DownArrow from "../../static/icons/arrow-down.svg";
+import UnccdLogoWhite from '../../static/logos/unccd-white.svg'
 
 function LandingPanel() {
   return (
     <section className="full-height text-white video-wrapper panel-inner landing-background">
-      <div className="slide-content full-height flex flex-col content-end justify-end">
+      <div className="slide-content full-height flex flex-col content-end justify-between">
+        <div className="mt-8">
+          <img src={UnccdLogoWhite} alt="Unccd logo" />
+        </div>
         <div className="flex flex-col">
           <h2 className="max-sm:text-7xl md:text-7xl xl:text-7xl 2xl:text-9xl sm:text-6xl font-bold mt-20 mb-10  landing-text ">
             HER <br></br>

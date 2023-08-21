@@ -5,7 +5,7 @@
 
 /* GENERAL  */
 #unccd-logo {
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   top: 0;
   left: 5em;
@@ -219,6 +219,8 @@ iframe {
   .campaign-toolkit-background {
     background: url("../../static/images/campaign-toolkit.jpg") no-repeat 50%
       top;
+      background-size: cover;
+
   }
   .landing-text {
     color: #222;
@@ -233,16 +235,11 @@ iframe {
   }
   .desert-logo {
     background: url("../../static/images/stories.jpg") no-repeat 60% center;
+    background-size: cover;
+
   }
   .iframe-wrapper {
     position: static;
-  }
-  #unccd-logo {
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 1em;
-    transform: scale(0.9);
   }
 }
 
@@ -255,6 +252,7 @@ iframe {
   .herland-cta {
     background: url("../../static/images/call-to-action-alternative.jpg") no-repeat right bottom;
     background-color: #4D4399;
+    background-size: 25%;
   }
 }
 @media only screen and (max-width: 766px) {

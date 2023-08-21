@@ -1,19 +1,19 @@
 import React from "react";
-
+import { textH2, textBodyMedium, textBodyMediumBold } from "../../assets/css/fontSizes";
 function HerlandCTA() {
-  const pClassName = "md:text-base lg:text-sm mt-6";
+  const pClassName = `${textBodyMedium} lg:mt-4 md:mt-4`;
   return (
     <section className="panel-inner grid grid-cols-12 items-center   herland-cta">
-      <div className="col-span-12 grid grid-cols-12 gap-4 text-white mt-10 max-sm:mt-12 lg:mb-10 md:mb-32 max-sm:mb-50">
+      <div className="col-span-12 grid grid-cols-12 gap-4 text-white  ">
         <div className="col-span-12">
-          <h2 className="max-sm:text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl lg:mt-16 md:mt-32">
+          <h2 className={`${textH2} lg:mt-2`}>
             HerLand call to action
           </h2>
-          <h3 className="max-sm:text-base sm:text-2xl md:text-2xl lg:text-xl xl:text-3xl font-bold max-sm:mt-4 sm:mt-6 md:mt-10 lg:m-0">
+          <p className={`${textBodyMediumBold} max-sm:mt-4 sm:mt-4 lg:mt-4`}>
             Make women's land rights a reality
-          </h3>
+          </p>
         </div>
-        <div className="max-sm:text-xs sm:text-base 2xl:col-span-4 lg:col-span-6 md:col-span-12 sm:col-span-12 max-sm:col-span-12 md:mr-32">
+        <div className="max-sm:text-xs sm:text-base 2xl:col-span-4 lg:col-span-6 md:col-span-12 sm:col-span-12 max-sm:col-span-12 ">
           <p className={`${pClassName} md:mr-32 lg:mr-0`}>
             Healthy land is vital for human survival, it is the largest source
             of income, jobs and livelihoods for poor, rural households. It is

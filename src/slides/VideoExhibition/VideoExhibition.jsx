@@ -4,7 +4,7 @@ import SuhucamThumbnail from "../../static/video-thumbnails/2.png";
 import AlvarezThumbnail from "../../static/video-thumbnails/3.png";
 import PlayIcon from "../../static/icons/play-fill.svg";
 import VideoOverlay from "../../overlays/VideoOverlay";
-
+import { textH2, textBodyLarge, textBodyMedium, textBodyMediumBold } from "../../assets/css/fontSizes";
 function VideoExhibition(props) {
   const { setIsOverlayActive, setVideoSrc } = props;
   const showVideoOverlay = (url) => {
@@ -12,17 +12,15 @@ function VideoExhibition(props) {
     setIsOverlayActive(true);
   };
 
-  const nameClassNames =
-    "max-xs:text-2xl xs:text-xl md:text-3xl font-light mt-6";
-  const descriptionClassNames =
-    "max-xs:text-base xs:text-base md:text-lg font-light mt-2";
+  const nameClassNames = `${textBodyMediumBold} mt-6`
+   const descriptionClassNames = `${textBodyMedium} mb-10`
 
   return (
-    <section className="full-height bg-gray-950 text-white flex flex-col panel-inner">
-      <h2 className="max-sm:text-2xl sm:text-3xl lg:text-5xl pt-32 font-light  ">
+    <section className="full-height bg-gray-950 text-white flex flex-col justify-center	 panel-inner">
+      <h2 className={`${textH2} pt-10`}>
         Video-Art Exhibition: "TransNature" #HerLand
       </h2>
-      <p className="max-sm:text-base lg:text-base 2xl:text-2xl  pt-10 font-light  ">
+      <p className={`${textBodyLarge} pt-10`}>
         Discover a unique fusion of nature, technology, and art in the
         'TransNature' video-art exhibition. Five short loops invite you to
         reflect on our environment's transformation, interconnectedness, and the

@@ -1,9 +1,11 @@
+import { textH2, textBodyMedium, textBodyLarge, textBodyLargeBold, textBodyMediumBold } from "../../assets/css/fontSizes";
+
 function CampaignVideo() {
   return (
     <section className="full-height bg-indigo-900 text-white panel-inner grid content-center	">
-      <div className="grid grid-cols-12 mt-24 gap-6 ">
+      <div className="grid grid-cols-12  gap-6 ">
         <div
-          className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 flex panel-inner relative "
+          className="max-sm:col-span-12 sm:col-span-12 lg:col-span-5 flex panel-inner relative "
           style={{ position: "relative", height: "100%" }}
         >
           <iframe
@@ -14,8 +16,8 @@ function CampaignVideo() {
             width={"100%"}
           />
         </div>
-        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-6 lg:ml-6 max-xs:ml-6 mb-10 font-light">
-          <p>
+        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-7 lg:ml-6 max-xs:ml-6  font-light">
+          <p className={`${textBodyLarge}`}>
             Together with partners, activists and influencers,&nbsp;
             <a
               href="https://www.unccd.int/convention/overview"
@@ -38,15 +40,15 @@ function CampaignVideo() {
             in sustainable land management, mobilizing support to secure land
             rights for women and girls across the world.
           </p>
-          <p className="mt-6 text-sm">
+          <p className={`${textBodyMedium} mt-6`}>
             Every voice and every action counts, and you too can help by
             engaging your communities to advocate the key role of gender
             equality in empowering women and girls to take the lead on global
             land restoration and drought resilience efforts. We invite you to
             discover more and join! All of us can do our part:
           </p>
-          <p className="mt-6">All of us can do our part:</p>
-          <ul className="list-disc mb-10 ml-6 text-sm">
+          <p className={`${textBodyMedium} mt-6`}>All of us can do our part:</p>
+          <ul className={`${textBodyMedium} list-disc mb-10 ml-6`} >
             <li>
               Governments can promote laws, policies and practices that end
               discrimination and secure women’s rights to land and resources.

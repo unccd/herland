@@ -1,7 +1,8 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import importAllSmallPortraits from "./importPortraits";
- 
+import { textBodyLarge, textBodyMedium, textH2 } from "../../assets/css/fontSizes";
+
 function PhotoExhibition(props) {
   const { setIsOverlayActive, setPortraitSrc } = props;
   const openOverlay = (portraitSrc) => {
@@ -40,13 +41,13 @@ function PhotoExhibition(props) {
   return (
     <section className="full-height bg-white flex flex-column justify-around panel-inner">
       <div className="font-light">
-        <h2 className="max-sm:text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-light text-black pt-32">
+        <h2 className={`${textH2}`}>
           #HerLand Photo Exhibition
         </h2>
         <div className="grid grid-cols-12 text-black">
-          <p className="max-sm:text-base lg:text-base 2xl:text-2xl  font-light mt-8 md:col-span-8 sm:col-span-12 max-sm:col-span-12" >
+          <p className={`${textBodyLarge}  mt-8 md:col-span-8 sm:col-span-12 max-sm:col-span-12`}>
             Experience the strength and beauty of women across continents in our
-            exclusive 'Women & Land' photo exhibition. Curated by
+            exclusive 'Women & Land' photo exhibition. Curated by &nbsp;
             <a
               href="https://www.unccd.int/convention/land-ambassadors/inna-modja"
               target="_blank"
@@ -54,7 +55,7 @@ function PhotoExhibition(props) {
             >
               Inna Modja, UNCCD Goodwil Ambassador
             </a>
-            and Marco Conti Sikic, these portraits portray the essence of
+            &nbsp; and Marco Conti Sikic, these portraits portray the essence of
             women's relationship with the land.
           </p>
         </div>

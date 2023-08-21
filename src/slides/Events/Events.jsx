@@ -1,11 +1,12 @@
 import React from "react";
+import { textH2, textBodyLarge, textBodyMedium } from "../../assets/css/fontSizes";
 
 function Events() {
   return (
     <section className="full-height bg-stone-200 flex flex-col justify-around panel-inner">
-      <div className="text-black mt-20">
-        <h2 className="max-sm:text-2xl text-4xl font-light">Events </h2>
-        <p className="max-sm:text-base text-2xl font-light mt-6">
+      <div className="text-black ">
+        <h2 className={textH2}>Events </h2>
+        <p className={`${textBodyLarge} mt-6`}>
           Here are some events where you can view the HerLand Campaign:
         </p>
         <div className="grid 2xl:grid-cols-12 sm:grid-cols-1 max-sm:grid-cols-1">
@@ -55,11 +56,11 @@ function Events() {
         </div>
       </div>
       <div className="text-black justify-self-end	">
-        <h2 className="max-sm:text-2xl text-4xl font-light">
+        <h2 className={textH2}>
           Contact & Support
         </h2>
 
-        <p className="mt-6">
+        <p className={`${textBodyMedium} mt-6 mb-6`}>
           Contact Information:
           <a className="text-blue-700" href="mailto:herland@unccd.int">
             &nbsp;herland@unccd.int

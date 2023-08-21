@@ -23,16 +23,8 @@ function Homepage() {
   const [isVideoOverlayActive, setIsVideoOverlayActive] = useState(false);
   const [overlayVideoSrc, setOverlayVideoSrc] = useState("");
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-  const [UNCCD_LOGO, SET_UNCCD_LOGO] = useState(UnccdLogoWhite);
-
-  const changeLogoColor = (currentPanel) => {
-    if (currentPanel.contains("unccd-logo-white")) {
-      SET_UNCCD_LOGO(UnccdLogoWhite);
-    } else if (currentPanel.contains("unccd-logo-black")) {
-      SET_UNCCD_LOGO(UnccdLogoBlack);
-    }
-  };
-
+ 
+ 
   const handleResize = () => {
     setViewportWidth(window.innerWidth);
   };
@@ -91,8 +83,7 @@ function Homepage() {
 
       panels.forEach((panel, index) => {
         if (index === i) {
-          changeLogoColor(panel.classList);
-          if (panel.classList.contains("panel-taller")) {
+           if (panel.classList.contains("panel-taller")) {
             panel.classList.add("panel-fixed-tall");
           } else {
             panel.classList.add("panel-fixed");
@@ -157,12 +148,6 @@ function Homepage() {
         <Events />
       </div>
       <Footer />
-      <img
-        id="unccd-logo"
-        src={UNCCD_LOGO}
-        alt="UNCCD-logo"
-        className="unccd-logo mt-6"
-      />
       {isPortraitOverlayActive ? (
         <PortraitOverlay
           portraitSrc={overlayPortraitSrc}
