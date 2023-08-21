@@ -2,9 +2,9 @@ import React from "react";
 import ArrowRight from "../../static/icons/arrow-right.svg";
 import {
   textH2,
-  textBodyMedium,
   textBodyLarge,
 } from "../../assets/css/fontSizes";
+
 function CampaignToolkit() {
   return (
     <section className="full-height campaign-toolkit-background grid grid-cols-12	 content-center panel-inner">

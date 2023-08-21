@@ -68,7 +68,6 @@ const DemoComponent = () => (
 export default DemoComponent;
 ```
 4. Import your component in src/Homepage.jsx:
-5. 
 ```jsx
 import TestComponent from './slides/TestComponent';
 ...
@@ -85,7 +84,7 @@ return (
 
 ***Note***: If a panel's height exceeds `100vh` the scroll mode would switch to regular scroll, in order for the scroll effect to function each slide must be max 100vh.
 
-##Adding a New Pledge Card
+## Adding a New Pledge Card
 
 To add a new Pledge Card for the Pledges slide, follow these steps:
 
