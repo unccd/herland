@@ -6,6 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 import {
   textH2,
   textBodyLarge,
+  textBodyLargeBold,
   textBodyMedium,
 } from "../../assets/css/fontSizes";
 
@@ -15,18 +16,18 @@ function Pledge(props) {
     <div className="pledge-card bg-violet-800 text-white grid content-between sm:p-4 md:p-8 max-sm:p-4 m-2">
       <div>
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="max-sm:text-sm md:text-sm mb-2 2xl:text-lg">
+          <p key={index} className={`${textBodyLarge} mb-2`}>
             {paragraph}
           </p>
         ))}
       </div>
-      <div className="text-right">
-        <h3 className="xl:text-2xl g:text- xl sm:text-xl md:text-base max-sm:text-xl">
+      <div className="text-left">
+        <p className={`${textBodyLargeBold}`}>
           {author}
-        </h3>
-        <h4 className="xl:text-xl lg:text-base sm:text-base md:text-small font-light">
+        </p>
+        <p className={textBodyMedium}>
           {authorOccupation}
-        </h4>
+        </p>
       </div>
     </div>
   );
@@ -36,7 +37,7 @@ function Pledges() {
     desktop: {
       breakpoint: {
         max: 3000,
-        min: 1024,
+        min: 1280,
       },
       items: 3,
       partialVisibilityGutter: 40,
@@ -51,7 +52,7 @@ function Pledges() {
     },
     tablet: {
       breakpoint: {
-        max: 1024,
+        max: 1280,
         min: 768,
       },
       items: 2,
