@@ -44,7 +44,7 @@ function PhotoExhibition(props) {
   };
   return (
     <section className="full-height bg-white flex flex-column justify-around panel-inner">
-      <div className="font-light">
+      <div className="font-light md:mt-10 sm:mt-10 lg:mt-10 max-sm:mt-10">
         <h2 className={`${textH2}`}>#HerLand Photo Exhibition</h2>
         <div className="grid grid-cols-12 text-black">
           <p

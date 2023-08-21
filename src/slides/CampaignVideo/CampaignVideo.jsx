@@ -3,7 +3,7 @@ import { textBodyMedium, textBodyLarge } from "../../assets/css/fontSizes";
 function CampaignVideo() {
   return (
     <section className="full-height bg-indigo-900 text-white panel-inner grid content-center	">
-      <div className="grid grid-cols-12 gap-6  lg:my-0 max-sm:my-6">
+      <div className="grid grid-cols-12 gap-6 md:mt-10 sm:mt-10 lg:mt-0 max-sm:mt-10">
         <div
           className="max-sm:col-span-12 sm:col-span-12 xl:col-span-5 lg:col-span-4 flex panel-inner relative "
           style={{ position: "relative" }}
@@ -14,6 +14,7 @@ function CampaignVideo() {
             allowFullScreen
             height={"100%"}
             width={"100%"}
+        
           />
         </div>
         <div className="max-sm:col-span-12 sm:col-span-12 xl:col-span-7 lg:col-span-8 lg:ml-6 max-xs:ml-6  font-light">

@@ -1,6 +1,6 @@
 import DownArrow from "../../static/icons/arrow-down.svg";
 import UnccdLogoWhite from "../../static/logos/unccd-white.svg";
-
+import { landingHeader, landingHeaderDescription } from "../../assets/css/fontSizes";
 function LandingPanel() {
   return (
     <section className="full-height text-white video-wrapper panel-inner landing-background">
@@ -9,11 +9,11 @@ function LandingPanel() {
           <img src={UnccdLogoWhite} alt="Unccd logo" />
         </div>
         <div className="flex flex-col">
-          <h2 className="max-sm:text-7xl md:text-7xl xl:text-7xl 2xl:text-9xl sm:text-6xl font-bold mt-20 mb-10  landing-text ">
+          <h2 className={landingHeader}>
             HER <br></br>
             LAND
           </h2>
-          <div className="md:text-2xl 2xl:text-3xl lg:text-1xl sm:text-xl mb-32 landing-text-hidden">
+          <div className={landingHeaderDescription}>
             <p>For the land she provides, and in return, she's provided for.</p>
             <p>They are both nourished, intertwined, a tapestry old as time.</p>
             <p className="font-bold mt-10">

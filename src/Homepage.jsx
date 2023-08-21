@@ -6,8 +6,6 @@ import PhotoExhibition from "./slides/PhotoExhibition/PhotoExhibition";
 import HerlandStories from "./slides/HerlandStories/HerlandStories";
 import VideoExhibiton from "./slides/VideoExhibition/VideoExhibition";
 import Events from "./slides/Events/Events";
-import UnccdLogoBlack from "./static/logos/unccd-black.svg";
-import UnccdLogoWhite from "./static/logos/unccd-white.svg";
 import CampaignToolkit from "./slides/CampaignToolkit/CampaignToolkit";
 import VirtualExhibition from "./slides/VirtualExhibition/VirtualExhibition";
 import PortraitOverlay from "./overlays/PortraitOverlay";
@@ -108,43 +106,43 @@ function Homepage() {
 
   return (
     <>
-      <div className="panel unccd-logo-white">
+      <div className="panel">
         <LandingPanel />
       </div>
-      <div className="panel unccd-logo-white">
+      <div className="panel">
         <CampaignVideo />
       </div>
-      <div className="panel unccd-logo-white">
+      <div className="panel">
         <HerlandCTA />
       </div>
-      <div className="panel unccd-logo-black">
+      <div className="panel">
         <Pledges />
       </div>
-      <div className="panel unccd-logo-black">
+      <div className="panel">
         <CampaignToolkit />
       </div>
-      <div className="panel unccd-logo-white">
+      <div className="panel">
         <HerlandStories />
       </div>
-      <div className="panel unccd-logo-black">
+      <div className="panel">
         <PhotoExhibition
           setIsOverlayActive={setIsPortraitOverlayActive}
           setPortraitSrc={setOverlayPortraitSrc}
         />
       </div>
-      <div className="panel unccd-logo-white">
+      <div className="panel">
         <VideoExhibiton
           setIsOverlayActive={setIsVideoOverlayActive}
           setVideoSrc={setOverlayVideoSrc}
         />
       </div>
-      <div className="panel unccd-logo-black">
+      <div className="panel">
         <VirtualExhibition />
       </div>
-      <div className="panel unccd-logo-white">
+      <div className="panel">
         <Healverse />
       </div>
-      <div className="panel unccd-logo-black">
+      <div className="panel">
         <Events />
       </div>
       <Footer />

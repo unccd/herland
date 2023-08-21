@@ -6,7 +6,7 @@ import { textH2, textBodyLarge } from "../../assets/css/fontSizes";
 function VirtualExhibition() {
   return (
     <section className="bg-white panel-inner grid grid-cols-2 gap- h-full">
-      <div className="lg:col-span-1  flex items-center sm:col-span-2 max-sm:col-span-2">
+      <div className="lg:col-span-1 flex items-center sm:col-span-2 max-sm:col-span-2 md:mt-10 sm:mt-10 lg:mt-0 max-sm:mt-10">
         <div className="font-light  md:mr-16 sm:mr-4 max-sm:mr-0">
           <h2 className={`${textH2}`}>Interactive virtual exhibition</h2>
           <p className={`${textBodyLarge} mt-8`}>

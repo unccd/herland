@@ -8,7 +8,7 @@ import {
 function Healverse() {
   return (
     <section className="full-height panel-inner flex flex-col  justify-content-center text-white  healverse-background">
-      <div className="max-sm:mt-10 sm:mt-0">
+      <div className="md:mt-10 sm:mt-10 lg:mt-0 max-sm:mt-10 ">
         <h2 className={textH2}>Web3/Metaverse Experience (HEALV3RSE)</h2>
       </div>
       <div className="grid grid-cols-12 mt-10 gap-6">
