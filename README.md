@@ -26,7 +26,7 @@ Before you start working on the **Herland** project, make sure you have the foll
 Clone the project repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/herland.git
+git clone https://github.com/unccd/herland.git
 ```
 
 ### Install Local Dependencies
@@ -88,7 +88,7 @@ return (
 
 To add a new Pledge Card for the Pledges slide, follow these steps:
 
-1. Open src/Pledges/pledgeData.jsx.
+1. Open `src/Pledges/pledgeData.jsx`.
 
 2. Locate the pledgeData array and add a new object:
 
@@ -112,7 +112,7 @@ To add a new Pledge Card for the Pledges slide, follow these steps:
 ## Adding a New Image to the Carousel
 To add a new image to the carousel, follow these steps:
 
-1. Add a small resolution image to src/static/small-portraits, to be displayed as preview in the carousel.
+1. Add a small resolution image to `src/static/small-portraits`, to be displayed as preview in the carousel.
 
-2. Add the corresponding full resolution image to src/static/portraits with the same name.
+2. Add the corresponding full resolution image to `src/static/portraits` with the same name.
 
