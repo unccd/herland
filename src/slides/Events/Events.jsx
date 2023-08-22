@@ -51,7 +51,7 @@ function Events() {
                 rel="noopener noreferrer"
               >
                 <div>
-                  <h2 className="text-2xl text-white font-bold">UNFCC</h2>
+                  <h2 className="text-2xl text-white font-bold">UNFCCC</h2>
                   <h2 className="text-2xl text-white font-bold">COP28</h2>
                 </div>
               </a>
