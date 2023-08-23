@@ -1,4 +1,17 @@
 import { textBodyMedium, textBodyLarge } from '../../assets/css/fontSizes';
+import PlayIcon from '../../static/icons/play-fill.svg';
+import mainCampaignCover from '../../static/images/landing-background.jpg';
+
+const loadVideo = (coverId, playerId) => {
+  const player = document.getElementById(playerId);
+  const cover = document.getElementById(coverId);
+  console.log({ cover });
+  console.log('panret element', cover.parentElement);
+
+  cover.parentElement.style.display = 'none';
+  player.style.display = 'block';
+  player.src = player.dataset.src;
+};
 
 function CampaignVideo() {
   return (
@@ -8,12 +21,35 @@ function CampaignVideo() {
           className='max-sm:col-span-12 sm:col-span-12 xl:col-span-5 lg:col-span-4 flex panel-inner relative '
           style={{ position: 'relative' }}
         >
+          <div className='cover video-thumbnail-wrapper flex justify-center'>
+            <img
+              id='main-campaign-thumb'
+              src={mainCampaignCover}
+              onClick={(event) => {
+                event.preventDefault();
+                loadVideo('main-campaign-thumb', 'main-campaign-video');
+              }}
+            />
+            <img
+              src={PlayIcon}
+              onClick={(event) => {
+                event.preventDefault();
+                loadVideo('main-campaign-thumb', 'main-campaign-video');
+              }}
+              className='play-button'
+            />
+          </div>
           <iframe
-            src='https://www.youtube.com/embed/b_0rx56VCak?rel=0&modestbranding=1'
+            id='main-campaign-video'
+            data-src='https://www.youtube.com/embed/b_0rx56VCak?rel=0&modestbranding=1'
             title='YouTube Video'
             allowFullScreen
             height={'100%'}
             width={'100%'}
+            style={{
+              opacity: 1,
+              display: 'none',
+            }}
           />
         </div>
         <div className='max-sm:col-span-12 sm:col-span-12 xl:col-span-7 lg:col-span-8 lg:ml-6 max-xs:ml-6  font-light'>

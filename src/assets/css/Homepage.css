@@ -169,6 +169,7 @@ iframe {
   background: url('../../static/events/event-3.png') no-repeat left center;
   background-size: cover;
 }
+
 .copywright {
   padding: 3.5rem 5rem;
   min-height: unset;
@@ -229,7 +230,7 @@ iframe {
   background: url('../../static/logos/changwon-2x.png') no-repeat left center;
   background-size: contain;
   width: 4.75rem;
-  height: 5.9375rem;
+  height: 4.75rem;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 640px) {

@@ -16,7 +16,7 @@ function Footer() {
           Government of Canada, and the Changwon Initiative. Its contents are
           the sole responsibility of the UNCCD and do not necessarily reflect
           the views of the European Union, the Government of Canada, or the
-          Changwon Initiative.
+          Republic of Korea.
         </p>
       </div>
       <div className='flex lg:justify-end md:justify-between sm:justify-between max-sm:justify-between items-end grid-cols-3 gap-4'>
