@@ -170,7 +170,7 @@ iframe {
   background-size: cover;
 }
 .copywright {
-  padding: 0 5em;
+  padding: 3.5rem 5rem;
   min-height: unset;
 }
 /* Healv3rse */
@@ -193,6 +193,43 @@ iframe {
 
 .campaign-toolkit-link {
   color: #4d4399;
+  font-weight: 500 !important;
+}
+
+.campaign-video-bg {
+  background-color: #111;
+}
+
+.footer-text {
+  color: #eff0eb;
+  opacity: 0.75;
+}
+
+.footer-link {
+  color: #eff0eb;
+  font-weight: 400;
+}
+
+/* logos */
+.logo-1 {
+  background: url('../../static/logos/EN_FundedbytheEU_RGB_WHITE_Outline_1.png')
+    no-repeat left center;
+  background-size: contain;
+  width: 14.25rem;
+  height: 3.1875rem;
+}
+.logo-2 {
+  background: url('../../static/logos/partnership-canada-2x.png') no-repeat left
+    center;
+  background-size: contain;
+  width: 10.1875rem;
+  height: 3.625rem;
+}
+.logo-3 {
+  background: url('../../static/logos/changwon-2x.png') no-repeat left center;
+  background-size: contain;
+  width: 4.75rem;
+  height: 5.9375rem;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 640px) {
@@ -223,6 +260,26 @@ iframe {
   .campaign-toolkit-h2 {
     font-size: 2.5rem !important;
   }
+
+  .logo-1 {
+    background: url('../../static/logos/funded-eu.png') no-repeat left center;
+    background-size: contain;
+    width: 8.8125rem;
+    height: 1.9375rem;
+  }
+  .logo-2 {
+    background: url('../../static/logos/partnership-canada.png') no-repeat left
+      center;
+    background-size: contain;
+    width: 6.3125rem;
+    height: 2.25rem;
+  }
+  .logo-3 {
+    background: url('../../static/logos/changwon.png') no-repeat left center;
+    background-size: contain;
+    width: 2.875rem;
+    height: 3.6875rem;
+  }
 }
 
 /* detect when the user is on mobile */
@@ -240,7 +297,7 @@ iframe {
   .landing-text {
     color: #222;
     margin-bottom: 5vh;
-    font-size: 6em !important;
+    font-size: 5rem !important;
   }
   .landing-text-hidden {
     display: none;

@@ -33,7 +33,9 @@ function CampaignToolkit() {
         >
           <div className='flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer hover:underline campaign-toolkit-link'>
             <img src={ArrowRight} className='icon scale-150' />
-            <p className={textBodyLarge}>Link to promotional materials</p>
+            <p className={`${textBodyLarge} campaign-toolkit-link`}>
+              Link to promotional materials
+            </p>
           </div>
         </a>
       </div>

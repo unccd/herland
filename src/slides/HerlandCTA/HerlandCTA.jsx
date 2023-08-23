@@ -10,7 +10,7 @@ function HerlandCTA() {
     <section className='panel-inner grid grid-cols-12 items-center herland-cta'>
       <div className='col-span-12 grid grid-cols-12 gap-4 text-white max-sm:my-10 sm:my-2 '>
         <div className='col-span-12'>
-          <h2 className={`${textH2} lg:mt-2`}>HerLand call to action</h2>
+          <h2 className={`${textH2} lg:mt-2`}>#HerLand call to action</h2>
           <p className={`${textBodyMediumBold} max-sm:mt-4 sm:mt-4 lg:mt-4`}>
             Make women's land rights a reality
           </p>
