@@ -41,7 +41,7 @@ jobs:
           npm install
       - name: "Build"
         run: |
-          npm run build -- --base=/herland/
+          npm run build                    
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
