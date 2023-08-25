@@ -12,7 +12,7 @@ function LandingPanel() {
           <img src={UnccdLogoWhite} alt='Unccd logo' />
         </div>
         <div className='flex flex-col'>
-          <h2 className={landingHeader}>HerLand</h2>
+          <h2 className={landingHeader}>HER LAND</h2>
           <div className={landingHeaderDescription}>
             <p>For the land she provides, and in return, she's provided for.</p>
             <p>They are both nourished, intertwined, a tapestry old as time.</p>

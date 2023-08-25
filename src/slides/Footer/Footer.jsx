@@ -12,7 +12,7 @@ function Footer() {
           </a>
         </p>
         <p className='max-sm:text-sm sm:text-base md:text-base lg:text-sm xl:text-xl 2xl:text-xl leading-5 footer-text'>
-          The HerLand campaign is co-funded by the European Union, the
+          The #HerLand campaign is co-funded by the European Union, the
           Government of Canada, and the Changwon Initiative. Its contents are
           the sole responsibility of the UNCCD and do not necessarily reflect
           the views of the European Union, the Government of Canada, or the

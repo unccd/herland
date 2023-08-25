@@ -7,7 +7,7 @@ function Events() {
       <div className='text-black '>
         <h2 className={textH2}>Events </h2>
         <p className={`${textBodyLarge} mt-6`}>
-          Here are some events where you can view the HerLand Campaign:
+          Here are some events where you can view the #HerLand Campaign:
         </p>
         <div className='grid 2xl:grid-cols-12 sm:grid-cols-1 max-sm:grid-cols-1'>
           <div className='grid 2xl:grid-cols-4 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 max-sm:grid-cols-1 gap-6 mt-10 footer-events col-span-10'>
