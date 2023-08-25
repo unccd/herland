@@ -169,6 +169,10 @@ iframe {
   background: url('../../static/events/event-3.png') no-repeat left center;
   background-size: cover;
 }
+.event-4 {
+  background: url('../../static/events/event-4.png') no-repeat left center;
+  background-size: cover;
+}
 
 .copywright {
   padding: 3.5rem 5rem;

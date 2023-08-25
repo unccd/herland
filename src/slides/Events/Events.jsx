@@ -52,6 +52,18 @@ function Events() {
                 </div>
               </a>
             </div>
+            <div className='event-wrapper event-4 max-sm:h-24 sm:h-32 flex flex-col justify-center pl-2'>
+              <a
+                href='https://www.unccd.int/events/other/gef-7th-general-assembly'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <div>
+                  <h2 className='text-2xl text-white font-bold'>#HerLand exhibition</h2>
+                  <h2 className='text-base text-white'>at 7th GEF General Assembly</h2>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
