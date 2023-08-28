@@ -5,9 +5,7 @@ import mainCampaignCover from '../../static/images/landing-background.jpg';
 const loadVideo = (coverId, playerId) => {
   const player = document.getElementById(playerId);
   const cover = document.getElementById(coverId);
-  console.log({ cover });
-  console.log('panret element', cover.parentElement);
-
+ 
   cover.parentElement.style.display = 'none';
   player.style.display = 'block';
   player.src = player.dataset.src;
