@@ -84,31 +84,6 @@ return (
 
 ***Note***: If a panel's height exceeds `100vh` the scroll mode would switch to regular scroll, in order for the scroll effect to function each slide must be max 100vh.
 
-## Adding a New Pledge Card
-
-To add a new Pledge Card for the Pledges slide, follow these steps:
-
-1. Open `src/Pledges/pledgeData.jsx`.
-
-2. Locate the pledgeData array and add a new object:
-
-```jsx
- const pledgeData = [
- ...
- {
-   author: "Author name",
-   authorOccupation: "Author occupation",
-   paragraphs: [
-     "Paragraphs of text",
-     "Separated by vertical space",
-   ],
- }
- ...
-]
-```
-3. Customize the fields with the appropriate information.
-
-
 ## Adding a New Image to the Carousel
 To add a new image to the carousel, follow these steps:
 
@@ -116,3 +91,34 @@ To add a new image to the carousel, follow these steps:
 
 2. Add the corresponding full resolution image to `src/static/portraits` with the same name.
 
+
+## Adding a New Event
+
+To add a new Event Card for the Events slide, follow these steps:
+
+1. Open `src/slides/events/eventsData.js`.
+
+2. Add a new image for the Event Card in `src/static/events` and import it in `eventsData.js`
+
+```js
+import event1Img from "../../static/events/event-card-1.png";
+import event2Img from "../../static/events/event-card-2.png";
+...
+import yourEventImage from "../../static/events/yourEventImage.png"
+
+```
+3. Locate the `events` array and add a new object:
+
+```jsx
+ const events = [
+ ...
+    {
+        imageSrc: yourEventImage,
+        href: "event href",
+        title: "Event title",
+        subtitle: "Event subtitle, can be used for locationdates",
+    },
+ ...
+]
+```
+4. Customize the fields with the appropriate information.
