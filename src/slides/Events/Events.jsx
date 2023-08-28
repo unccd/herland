@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import {
   textH2,
   textBodyLarge,
@@ -13,7 +13,7 @@ import CarouselRightArrow from "../../static/icons/CarouselRightArrow";
 
 const EventItem = ({ event }) => {
   return (
-    <div className="grow select-none self-align-center justify-items-center max-sm:mx-0 sm:mx-4">
+    <div className="grow select-none self-align-center justify-items-center max-sm:mx-0 sm:mx-2">
       <a href={event.href} target="_blank" rel="noopener noreferrer">
         <div className="relative overflow-hidden bg-cover bg-no-repeat bg-white">
           <img
@@ -53,7 +53,7 @@ function Events() {
     lg: {
       breakpoint: {
         max: 1280,
-        min: 1024
+        min: 1024,
       },
       items: 3,
       partialVisibilityGutter: 30,
@@ -76,7 +76,9 @@ function Events() {
     },
   };
   // console.log(eventsCarouselRef.current.state)
-  let isRightArrowDisabled = eventsCarouselRef?.current?.state?.currentSlide === eventsCarouselRef?.current?.state?.totalItems
+  let isRightArrowDisabled =
+    eventsCarouselRef?.current?.state?.currentSlide ===
+    eventsCarouselRef?.current?.state?.totalItems;
   return (
     <section className="full-height bg-stone-200 flex flex-col justify-around panel-inner">
       <div className="text-black ">
@@ -87,7 +89,7 @@ function Events() {
           </p>
           <div className="flex self-end	">
             <CarouselLeftArrow innerRef={eventsCarouselRef} />
-            <CarouselRightArrow innerRef={eventsCarouselRef}/>
+            <CarouselRightArrow innerRef={eventsCarouselRef} />
           </div>
         </div>
 
@@ -105,7 +107,6 @@ function Events() {
             <EventItem event={event} key={index} />
           ))}
         </Carousel>
-         
       </div>
     </section>
   );

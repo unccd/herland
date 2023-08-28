@@ -2,10 +2,7 @@ import { useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import importAllSmallPortraits from "./importPortraits";
-import {
-  textBodyLarge,
-   textH2,
-} from "../../assets/css/fontSizes";
+import { textBodyLarge, textH2 } from "../../assets/css/fontSizes";
 import CarouselLeftArrow from "../../static/icons/CarouselLeftArrow";
 import CarouselRightArrow from "../../static/icons/CarouselRightArrow";
 
@@ -68,36 +65,38 @@ function PhotoExhibition(props) {
           </p>
         </div>
       </div>
-      <div className="flex self-end	">
-            <CarouselLeftArrow innerRef={photoCarouselRef}/>
-            <CarouselRightArrow innerRef={photoCarouselRef} />
-          </div>
-      <Carousel
-        arrows={false}
-        draggable
-        infinite
-        keyBoardControl
-        responsive={carouselResponsive}
-        slidesToSlide={1}
-        swipeable
-        ref={photoCarouselRef}
-      >
-        {portraits.map((portraitSrc, index) => (
-          <div
-            key={index}
-            className="carousel-image-wrapper cursor-pointer"
-            onClick={() => {
-              openOverlay(portraitSrc);
-            }}
-          >
-            <img
-              src={portraitSrc}
-              alt={`Portrait ${index}`}
-              className="carousel-image "
-            />
-          </div>
-        ))}
-      </Carousel>
+      <div className="flex flex-col">
+        <div className="flex self-end ">
+          <CarouselLeftArrow innerRef={photoCarouselRef} />
+          <CarouselRightArrow innerRef={photoCarouselRef} />
+        </div>
+        <Carousel
+          arrows={false}
+          draggable
+          infinite
+          keyBoardControl
+          responsive={carouselResponsive}
+          slidesToSlide={1}
+          swipeable
+          ref={photoCarouselRef}
+        >
+          {portraits.map((portraitSrc, index) => (
+            <div
+              key={index}
+              className="carousel-image-wrapper cursor-pointer"
+              onClick={() => {
+                openOverlay(portraitSrc);
+              }}
+            >
+              <img
+                src={portraitSrc}
+                alt={`Portrait ${index}`}
+                className="carousel-image "
+              />
+            </div>
+          ))}
+        </Carousel>
+      </div>
     </section>
   );
 }
