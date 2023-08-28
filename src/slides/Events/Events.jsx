@@ -75,10 +75,7 @@ function Events() {
       partialVisibilityGutter: 30,
     },
   };
-  // console.log(eventsCarouselRef.current.state)
-  let isRightArrowDisabled =
-    eventsCarouselRef?.current?.state?.currentSlide ===
-    eventsCarouselRef?.current?.state?.totalItems;
+ 
   return (
     <section className="full-height bg-stone-200 flex flex-col justify-around panel-inner">
       <div className="text-black ">
