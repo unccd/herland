@@ -1,14 +1,18 @@
+import { useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import importAllSmallPortraits from "./importPortraits";
 import {
   textBodyLarge,
-  textBodyMedium,
-  textH2,
+   textH2,
 } from "../../assets/css/fontSizes";
+import CarouselLeftArrow from "../../static/icons/CarouselLeftArrow";
+import CarouselRightArrow from "../../static/icons/CarouselRightArrow";
 
 function PhotoExhibition(props) {
   const { setIsOverlayActive, setPortraitSrc } = props;
+  const photoCarouselRef = useRef(null);
+
   const openOverlay = (portraitSrc) => {
     setIsOverlayActive(true);
     setPortraitSrc(portraitSrc);
@@ -64,15 +68,19 @@ function PhotoExhibition(props) {
           </p>
         </div>
       </div>
-
+      <div className="flex self-end	">
+            <CarouselLeftArrow innerRef={photoCarouselRef}/>
+            <CarouselRightArrow innerRef={photoCarouselRef} />
+          </div>
       <Carousel
-        arrows
+        arrows={false}
         draggable
         infinite
         keyBoardControl
         responsive={carouselResponsive}
         slidesToSlide={1}
         swipeable
+        ref={photoCarouselRef}
       >
         {portraits.map((portraitSrc, index) => (
           <div

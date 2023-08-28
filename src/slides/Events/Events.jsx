@@ -1,71 +1,111 @@
-import React from 'react';
-import { textH2, textBodyLarge } from '../../assets/css/fontSizes';
+import React, { useEffect, useRef } from "react";
+import {
+  textH2,
+  textBodyLarge,
+  textBodyMedium,
+  textBodyLargeBold,
+} from "../../assets/css/fontSizes";
+import events from "./eventsData";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import CarouselLeftArrow from "../../static/icons/CarouselLeftArrow";
+import CarouselRightArrow from "../../static/icons/CarouselRightArrow";
+
+const EventItem = ({ event }) => {
+  return (
+    <div className="grow select-none self-align-center justify-items-center max-sm:mx-0 sm:mx-4">
+      <a href={event.href} target="_blank" rel="noopener noreferrer">
+        <div className="relative overflow-hidden bg-cover bg-no-repeat bg-white">
+          <img
+            src={event.imageSrc}
+            alt="Event image"
+            className="w-full transition duration-300 ease-in-out hover:scale-105"
+          />
+        </div>
+        <div className="mt-2">
+          <h2 className={`${textBodyLargeBold} `}>{event.title}</h2>
+          <p className={`${textBodyMedium} `}>{event.subtitle}</p>
+        </div>
+      </a>
+    </div>
+  );
+};
 
 function Events() {
+  const eventsCarouselRef = useRef(null);
+  const carouselResponsive = {
+    xxl: {
+      breakpoint: {
+        max: 3000,
+        min: 1536,
+      },
+      items: 4,
+      partialVisibilityGutter: 40,
+    },
+    xl: {
+      breakpoint: {
+        max: 1536,
+        min: 1280,
+      },
+      items: 4,
+      partialVisibilityGutter: 40,
+    },
+    lg: {
+      breakpoint: {
+        max: 1280,
+        min: 1024
+      },
+      items: 3,
+      partialVisibilityGutter: 30,
+    },
+    md: {
+      breakpoint: {
+        max: 1024,
+        min: 768,
+      },
+      items: 2,
+      partialVisibilityGutter: 30,
+    },
+    sm: {
+      breakpoint: {
+        max: 768,
+        min: 0,
+      },
+      items: 1,
+      partialVisibilityGutter: 30,
+    },
+  };
+  // console.log(eventsCarouselRef.current.state)
+  let isRightArrowDisabled = eventsCarouselRef?.current?.state?.currentSlide === eventsCarouselRef?.current?.state?.totalItems
   return (
-    <section className='full-height bg-stone-200 flex flex-col justify-around panel-inner'>
-      <div className='text-black '>
+    <section className="full-height bg-stone-200 flex flex-col justify-around panel-inner">
+      <div className="text-black ">
         <h2 className={textH2}>Events </h2>
-        <p className={`${textBodyLarge} mt-6`}>
-          Here are some events where you can view the #HerLand Campaign:
-        </p>
-        <div className='grid 2xl:grid-cols-12 sm:grid-cols-1 max-sm:grid-cols-1'>
-          <div className='grid 2xl:grid-cols-4 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 max-sm:grid-cols-1 gap-6 mt-10 footer-events col-span-10'>
-            <div className='event-wrapper event-1 max-sm:h-24 sm:h-32 flex flex-col justify-center pl-2'>
-              <a
-                href='https://www.unccd.int/events/desertification-drought-day/2023'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <div>
-                  <h2 className='text-2xl text-white font-bold'>
-                    Desertification and
-                  </h2>
-                  <h2 className='text-2xl text-white font-bold'>
-                    Drought Day 2023
-                  </h2>
-                </div>
-              </a>
-            </div>
-            <div className='event-wrapper event-2 max-sm:h-24 sm:h-32 flex flex-col justify-center pl-2'>
-              <a
-                href='https://www.unccd.int/cric21'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <div>
-                  <h2 className='text-2xl text-white font-bold'>CRIC21</h2>
-                  <p className='text-base text-white m-0'>Samarkand, </p>
-                  <p className='text-base text-white m-0'>Uzbekistan, 2023</p>
-                </div>
-              </a>
-            </div>
-            <div className='event-wrapper event-3 max-sm:h-24 sm:h-32 flex flex-col justify-center pl-2'>
-              <a
-                href='https://unfccc.int/cop28'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <div>
-                  <h2 className='text-2xl text-white font-bold'>UNFCCC</h2>
-                  <h2 className='text-2xl text-white font-bold'>COP28</h2>
-                </div>
-              </a>
-            </div>
-            <div className='event-wrapper event-4 max-sm:h-24 sm:h-32 flex flex-col justify-center pl-2'>
-              <a
-                href='https://www.unccd.int/events/other/gef-7th-general-assembly'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <div>
-                  <h2 className='text-2xl text-white font-bold'>#HerLand exhibition</h2>
-                  <h2 className='text-base text-white'>at 7th GEF General Assembly</h2>
-                </div>
-              </a>
-            </div>
+        <div className="flex justify-between max-md:flex-col md:flex-row">
+          <p className={`${textBodyLarge} mt-6`}>
+            Here are some events where you can view the #HerLand Campaign:
+          </p>
+          <div className="flex self-end	">
+            <CarouselLeftArrow innerRef={eventsCarouselRef} />
+            <CarouselRightArrow innerRef={eventsCarouselRef}/>
           </div>
         </div>
+
+        <Carousel
+          draggable
+          keyBoardControl
+          responsive={carouselResponsive}
+          slidesToSlide={1}
+          swipeable
+          ref={(el) => (eventsCarouselRef.current = el)}
+          arrows={false}
+          infinite
+        >
+          {events.map((event, index) => (
+            <EventItem event={event} key={index} />
+          ))}
+        </Carousel>
+         
       </div>
     </section>
   );
