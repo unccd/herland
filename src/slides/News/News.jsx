@@ -77,7 +77,7 @@ function News() {
   };
 
   return (
-    <section className='full-height flex flex-col justify-around panel-inner bg-gray-950'>
+    <section className='full-height flex flex-col justify-around panel-inner bg-gray-900'>
       <div className='text-white '>
         <h2 className={textH2}>News </h2>
         <div className='flex justify-between max-md:flex-col md:flex-row'>
