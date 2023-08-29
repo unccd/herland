@@ -2,6 +2,12 @@
 
 Welcome to the **Herland** project, a React application built using Vite and Taiwind CSS. This documentation provides step-by-step instructions for various scenarios you might encounter during your work on the project.
 
+
+You can access the live version of the project via the following links:
+
+- **Main Branch (Production):** [herland.global](https://herland.global/)
+- **Develop Branch (Staging):** [staging-herland](https://staging-herland.netlify.app/)
+
 ## Table of Contents
 1. Prerequisites
 2. Getting Started
@@ -69,7 +75,7 @@ export default DemoComponent;
 ```
 4. Import your component in src/Homepage.jsx:
 ```jsx
-import TestComponent from './slides/TestComponent';
+import DemoComponent from './slides/DemoComponent';
 ...
 return (
       ...
