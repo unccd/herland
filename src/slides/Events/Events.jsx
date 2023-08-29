@@ -64,7 +64,7 @@ function Events() {
         min: 768,
       },
       items: 2,
-      partialVisibilityGutter: 30,
+      partialVisibilityGutter: 20,
     },
     sm: {
       breakpoint: {
@@ -72,7 +72,7 @@ function Events() {
         min: 0,
       },
       items: 1,
-      partialVisibilityGutter: 30,
+      partialVisibilityGutter: 0,
     },
   };
 
@@ -99,6 +99,7 @@ function Events() {
           ref={(el) => (eventsCarouselRef.current = el)}
           arrows={false}
           infinite
+          partialVisbile={true}
         >
           {events.map((event, index) => (
             <EventItem event={event} key={index} />

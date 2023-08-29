@@ -64,7 +64,7 @@ function News() {
         min: 768,
       },
       items: 2,
-      partialVisibilityGutter: 30,
+      partialVisibilityGutter: 20,
     },
     sm: {
       breakpoint: {
@@ -72,7 +72,7 @@ function News() {
         min: 0,
       },
       items: 1,
-      partialVisibilityGutter: 30,
+      partialVisibilityGutter: 0,
     },
   };
 
@@ -99,6 +99,7 @@ function News() {
           ref={(el) => (newsCarouselRef.current = el)}
           arrows={false}
           infinite
+          partialVisbile={true}
         >
           {news.map((newsItem, index) => (
             <NewsItem news={newsItem} key={index} />

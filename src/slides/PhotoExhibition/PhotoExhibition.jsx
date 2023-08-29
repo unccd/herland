@@ -32,7 +32,7 @@ function PhotoExhibition(props) {
         min: 0,
       },
       items: 1,
-      partialVisibilityGutter: 30,
+      partialVisibilityGutter: 0,
     },
     tablet: {
       breakpoint: {
@@ -79,6 +79,7 @@ function PhotoExhibition(props) {
           slidesToSlide={1}
           swipeable
           ref={photoCarouselRef}
+          partialVisbile={true}
         >
           {portraits.map((portraitSrc, index) => (
             <div
