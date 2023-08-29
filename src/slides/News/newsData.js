@@ -8,25 +8,25 @@ const news = [
     imageSrc: UzbekistanMarathon,
     href: 'https://www.unccd.int/news-stories/stories/communities-worldwide-unite-her-land-her-rights',
     title: 'Communities worldwide unite for Her Land, Her Rights',
-    subtitle: '4 JULY 2023',
+    date: '4 JULY 2023',
   },
   {
     imageSrc: InnaWithDaughter,
     href: 'https://www.unccd.int/news-stories/press-releases/global-leaders-call-action-womens-land-rights',
     title: 'Global leaders call to action on women’s land rights',
-    subtitle: '17 JUNE 2023',
+    date: '17 JUNE 2023',
   },
   {
     imageSrc: UnHq,
     href: 'https://www.unccd.int/news-stories/press-releases/world-leaders-urged-prioritize-womens-land-rights-un',
     title: 'World leaders urged to prioritize women’s land rights at the UN',
-    subtitle: '16 JUNE 2023',
+    date: '16 JUNE 2023',
   },
   {
     imageSrc: UnccdTschad,
     href: 'https://www.unccd.int/news-stories/press-releases/desertification-and-drought-day-2023-sets-ambitious-womens-land-rights',
     title: 'Desertification and Drought Day 2023 sets an ambitious women\'s land rights agenda ',
-    subtitle: '20 MARCH 2023',
+    date: '20 MARCH 2023',
   },
 ]
 
