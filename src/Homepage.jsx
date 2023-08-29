@@ -166,10 +166,10 @@ function Homepage() {
         <Healverse />
       </div> */}
       <div className='panel'>
-        <News />
+        <Events />
       </div>
       <div className='panel'>
-        <Events />
+        <News />
       </div>
       <Footer />
       {isPortraitOverlayActive ? (

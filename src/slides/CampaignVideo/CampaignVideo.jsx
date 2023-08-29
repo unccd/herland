@@ -20,6 +20,7 @@ function CampaignVideo() {
           style={{ position: 'relative' }}
         >
           <div className='cover video-thumbnail-wrapper flex justify-center'>
+            <div className='grid items-center	 '>
             <img
               id='main-campaign-thumb'
               src={mainCampaignCover}
@@ -36,6 +37,9 @@ function CampaignVideo() {
               }}
               className='play-button'
             />
+            </div>
+
+          
           </div>
           <iframe
             id='main-campaign-video'

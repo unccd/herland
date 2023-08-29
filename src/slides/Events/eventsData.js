@@ -8,7 +8,7 @@ const events = [
     imageSrc: event2Img,
     href: 'https://www.unccd.int/cric21',
     title: 'CRIC21 ',
-    subtitle: 'Samarkand, Uzbekistan 13-17 November 2023',
+    subtitle: 'Samarkand, Uzbekistan, 13-17 November 2023',
   },
   {
     imageSrc: event3Img,
@@ -20,13 +20,13 @@ const events = [
     imageSrc: event4Img,
     href: 'https://www.unccd.int/events/other/seventh-assembly-global-environment-facility',
     title: 'HerLand exhibit at GEF General Assembly',
-    subtitle: 'Vancouver, Canada, 22 - 26 AUGUST 2023',
+    subtitle: 'Vancouver, Canada, 22 - 26 August 2023',
   },
   {
     imageSrc: event1Img,
     href: 'https://www.unccd.int/events/desertification-drought-day/2023',
     title: 'Desertification and Drought Day 2023',
-    subtitle: '',
+    subtitle: '17 June 2023',
   },
 ];
 

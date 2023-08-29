@@ -1,11 +1,15 @@
 import React from 'react';
 
-function CarouselRightArrow({ innerRef, disabled }) {
+function CarouselRightArrow({ innerRef, disabled, color }) {
   let opacityClass = '';
+  let fillColor = 'black';
   if (disabled) {
     opacityClass = 'opacity-5 hover:opacity-5';
   } else {
     opacityClass = 'opacity-30 hover:opacity-50';
+  }
+  if (color) {
+    fillColor = color;
   }
   return (
     <button
@@ -19,7 +23,7 @@ function CarouselRightArrow({ innerRef, disabled }) {
         viewBox='0 0 24 24'
       >
         <path
-          fill='black'
+          fill={fillColor}
           d='m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6l-6 6Z'
         />
       </svg>{' '}

@@ -11,7 +11,7 @@ import 'react-multi-carousel/lib/styles.css';
 import CarouselLeftArrow from '../../static/icons/CarouselLeftArrow';
 import CarouselRightArrow from '../../static/icons/CarouselRightArrow';
 
-const NewsItem = ({news}) => {
+const NewsItem = ({ news }) => {
   return (
     <div className='grow select-none self-align-center justify-items-center max-sm:mx-0 sm:mx-2'>
       <a href={news.href} target='_blank' rel='noopener noreferrer'>
@@ -29,7 +29,7 @@ const NewsItem = ({news}) => {
       </a>
     </div>
   );
-}
+};
 
 function News() {
   const newsCarouselRef = useRef(null);
@@ -77,16 +77,16 @@ function News() {
   };
 
   return (
-    <section className='full-height flex flex-col justify-around panel-inner' style={{background: '#4d4399'}}>
+    <section className='full-height flex flex-col justify-around panel-inner bg-gray-950'>
       <div className='text-white '>
         <h2 className={textH2}>News </h2>
         <div className='flex justify-between max-md:flex-col md:flex-row'>
           <p className={`${textBodyLarge} mt-6`}>
-            Here are some news related to the #HerLand Campaign:
+            Here are news related to the #HerLand Campaign:
           </p>
           <div className='flex self-end	'>
-            <CarouselLeftArrow innerRef={newsCarouselRef} />
-            <CarouselRightArrow innerRef={newsCarouselRef} />
+            <CarouselLeftArrow innerRef={newsCarouselRef} color='white' />
+            <CarouselRightArrow innerRef={newsCarouselRef} color='white' />
           </div>
         </div>
 

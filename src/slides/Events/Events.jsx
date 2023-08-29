@@ -6,7 +6,6 @@ import {
   textBodyLargeBold,
 } from '../../assets/css/fontSizes';
 import events from './eventsData';
-import news from './newsData';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CarouselLeftArrow from '../../static/icons/CarouselLeftArrow';
@@ -26,26 +25,6 @@ const EventItem = ({ event }) => {
         <div className='mt-2'>
           <h2 className={`${textBodyLargeBold} `}>{event.title}</h2>
           <p className={`${textBodyMedium} `}>{event.subtitle}</p>
-        </div>
-      </a>
-    </div>
-  );
-};
-
-const NewsItem = ({ news }) => {
-  return (
-    <div className='grow select-none self-align-center justify-items-center max-sm:mx-0 sm:mx-2'>
-      <a href={news.href} target='_blank' rel='noopener noreferrer'>
-        <div className='relative overflow-hidden bg-cover bg-no-repeat bg-white'>
-          <img
-            src={news.imageSrc}
-            alt='Event image'
-            className='w-full transition duration-300 ease-in-out hover:scale-105'
-          />
-        </div>
-        <div className='mt-2'>
-          <h2 className={`${textBodyLargeBold} `}>{news.title}</h2>
-          <p className={`${textBodyMedium} `}>{news.date}</p>
         </div>
       </a>
     </div>
@@ -125,21 +104,6 @@ function Events() {
             <EventItem event={event} key={index} />
           ))}
         </Carousel>
-        {/* <h2 className={`${textH2} my-3`}>News </h2>
-
-        <Carousel
-          draggable
-          keyBoardControl
-          responsive={carouselResponsive}
-          slidesToSlide={1}
-          swipeable
-          arrows={true}
-          infinite
-        >
-          {news.map((event, index) => (
-            <EventItem event={event} key={index} />
-          ))}
-        </Carousel> */}
       </div>
     </section>
   );
