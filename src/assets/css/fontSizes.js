@@ -7,8 +7,8 @@ const textBodyMedium =
 const textBodyMediumBold = 'lg:text-xl md:text-lg font-medium';
 const textBodyLarge =
   'max-sm:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl font-light';
-const textBodyLargeBold = 'max-sm:text-lg sm:text-lg md:text-lg lg:text-base xl:text-xl 2xl:text-2xl font-regular';
-
+const textBodyLargeBold =
+  'max-sm:text-lg sm:text-lg md:text-lg lg:text-base xl:text-xl 2xl:text-2xl font-regular';
 const landingHeader =
   'max-sm:text-7xl md:text-7xl xl:text-7xl 2xl:text-9xl sm:text-6xl font-bold mt-20 mb-10  landing-text';
 const landingHeaderDescription =

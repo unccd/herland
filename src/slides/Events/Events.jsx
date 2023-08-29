@@ -1,28 +1,28 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 import {
   textH2,
   textBodyLarge,
   textBodyMedium,
   textBodyLargeBold,
-} from "../../assets/css/fontSizes";
-import events from "./eventsData";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import CarouselLeftArrow from "../../static/icons/CarouselLeftArrow";
-import CarouselRightArrow from "../../static/icons/CarouselRightArrow";
+} from '../../assets/css/fontSizes';
+import events from './eventsData';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import CarouselLeftArrow from '../../static/icons/CarouselLeftArrow';
+import CarouselRightArrow from '../../static/icons/CarouselRightArrow';
 
 const EventItem = ({ event }) => {
   return (
-    <div className="grow select-none self-align-center justify-items-center max-sm:mx-0 sm:mx-2">
-      <a href={event.href} target="_blank" rel="noopener noreferrer">
-        <div className="relative overflow-hidden bg-cover bg-no-repeat bg-white">
+    <div className='grow select-none self-align-center justify-items-center max-sm:mx-0 sm:mx-2'>
+      <a href={event.href} target='_blank' rel='noopener noreferrer'>
+        <div className='relative overflow-hidden bg-cover bg-no-repeat bg-white'>
           <img
             src={event.imageSrc}
-            alt="Event image"
-            className="w-full transition duration-300 ease-in-out hover:scale-105"
+            alt='Event image'
+            className='w-full transition duration-300 ease-in-out hover:scale-105'
           />
         </div>
-        <div className="mt-2">
+        <div className='mt-2'>
           <h2 className={`${textBodyLargeBold} `}>{event.title}</h2>
           <p className={`${textBodyMedium} `}>{event.subtitle}</p>
         </div>
@@ -75,16 +75,16 @@ function Events() {
       partialVisibilityGutter: 30,
     },
   };
- 
+
   return (
-    <section className="full-height bg-stone-200 flex flex-col justify-around panel-inner">
-      <div className="text-black ">
+    <section className='full-height bg-stone-200 flex flex-col justify-around panel-inner'>
+      <div className='text-black '>
         <h2 className={textH2}>Events </h2>
-        <div className="flex justify-between max-md:flex-col md:flex-row">
+        <div className='flex justify-between max-md:flex-col md:flex-row'>
           <p className={`${textBodyLarge} mt-6`}>
             Here are some events where you can view the #HerLand Campaign:
           </p>
-          <div className="flex self-end	">
+          <div className='flex self-end	'>
             <CarouselLeftArrow innerRef={eventsCarouselRef} />
             <CarouselRightArrow innerRef={eventsCarouselRef} />
           </div>

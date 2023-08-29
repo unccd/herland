@@ -1,36 +1,36 @@
-import React from "react";
-import ArrowRight from "../../static/icons/arrow-right.svg";
+import React from 'react';
+import ArrowRight from '../../static/icons/arrow-right.svg';
 import {
   textH2,
   textBodyMedium,
   textBodyMediumBold,
-} from "../../assets/css/fontSizes";
+} from '../../assets/css/fontSizes';
 function Healverse() {
   return (
-    <section className="full-height panel-inner flex flex-col  justify-content-center text-white  healverse-background">
-      <div className="md:mt-10 sm:mt-10 lg:mt-0 max-sm:mt-10 ">
+    <section className='full-height panel-inner flex flex-col  justify-content-center text-white  healverse-background'>
+      <div className='md:mt-10 sm:mt-10 lg:mt-0 max-sm:mt-10 '>
         <h2 className={textH2}>Web3/Metaverse Experience (HEALV3RSE)</h2>
       </div>
-      <div className="grid grid-cols-12 mt-10 gap-6">
-        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-5 2xl-col-span-6 flex panel-inner iframe-wrapper">
+      <div className='grid grid-cols-12 mt-10 gap-6'>
+        <div className='max-sm:col-span-12 sm:col-span-12 lg:col-span-5 2xl-col-span-6 flex panel-inner iframe-wrapper'>
           <iframe
-            src="https://www.youtube.com/embed/VbMddmxlApU?rel=0&modestbranding=1"
-            title="YouTube Video"
+            src='https://www.youtube.com/embed/VbMddmxlApU?rel=0&modestbranding=1'
+            title='YouTube Video'
             allowFullScreen
-            height={"100%"}
-            width={"100%"}
+            height={'100%'}
+            width={'100%'}
           />
         </div>
-        <div className="max-sm:col-span-12 sm:col-span-12 lg:col-span-7 2xl:col-span-6 lg:ml-6 max-sm:ml-0 mb-6 font-light">
+        <div className='max-sm:col-span-12 sm:col-span-12 lg:col-span-7 2xl:col-span-6 lg:ml-6 max-sm:ml-0 mb-6 font-light'>
           <p className={`${textBodyMedium} pt-6`}>
             Embark on a journey unlike any other in the world of HEALV3RSE. We
             invite you to explore, learn, and contribute to the fight against
             desertification, land degradation, and drought in a cutting-edge
             Metaverse experience. Here's what awaits you:
             <a
-              href="https://youtu.be/VbMddmxlApU"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://youtu.be/VbMddmxlApU'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               https://youtu.be/VbMddmxlApU
             </a>
@@ -52,11 +52,11 @@ function Healverse() {
             to inspire change and healing for our planet.
           </p>
           <a
-            href="https://trello.com/b/AuQjCPfN/unccd-herland-campaign"
-            target="_blank"
+            href='https://trello.com/b/AuQjCPfN/unccd-herland-campaign'
+            target='_blank'
           >
-            <div className="flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer hover:underline">
-              <img src={ArrowRight} className="icon icon-white scale-150" />
+            <div className='flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer hover:underline'>
+              <img src={ArrowRight} className='icon icon-white scale-150' />
               <p className={`${textBodyMedium} m-0`}>Access the portal</p>
             </div>
           </a>
