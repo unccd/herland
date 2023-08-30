@@ -14,7 +14,7 @@ const loadVideo = (coverId, playerId) => {
 function CampaignVideo() {
   return (
     <section className='campaign-video-bg full-height text-white panel-inner grid content-center'>
-      <div className='grid grid-cols-12 gap-6 md:mt-10 sm:mt-10 lg:mt-0 max-sm:mt-10'>
+      <div className='grid grid-cols-12 gap-6 md:mt-10 sm:mt-10 lg:mt-0 max-sm:my-10'>
         <div
           className='max-sm:col-span-12 sm:col-span-12 xl:col-span-5 lg:col-span-4 flex panel-inner relative'
           style={{ position: 'relative' }}

@@ -19,7 +19,7 @@ const events = [
   {
     imageSrc: event4Img,
     href: 'https://www.unccd.int/events/other/seventh-assembly-global-environment-facility',
-    title: 'HerLand exhibit at GEF General Assembly',
+    title: '7th GEF Assembly',
     subtitle: 'Vancouver, Canada, 22 - 26 August 2023',
   },
   {

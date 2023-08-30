@@ -15,7 +15,7 @@ function HerlandCTA() {
             Make women's land rights a reality
           </p>
         </div>
-        <div className='xl:col-span-4 xl:col-span-4 lg:col-span-6 md:col-span-10 sm:col-span-12 max-sm:col-span-12'>
+        <div className='xl:col-span-4 xl:col-span-6 lg:col-span-6 md:col-span-10 sm:col-span-12 max-sm:col-span-12'>
           <p className={pClassName}>
             Healthy land is vital for human survival, it is the largest source
             of income, jobs and livelihoods for poor, rural households. It is
