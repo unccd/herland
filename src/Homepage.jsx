@@ -14,6 +14,7 @@ import Healverse from './slides/Healverse/Healverse';
 import Footer from './slides/Footer/Footer';
 import HerlandCTA from './slides/HerlandCTA/HerlandCTA';
 import Pledges from './slides/Plegdes/Pledges';
+import News from './slides/News/News';
 
 function Homepage() {
   const [isPortraitOverlayActive, setIsPortraitOverlayActive] = useState(false);
@@ -166,6 +167,9 @@ function Homepage() {
       </div> */}
       <div className='panel'>
         <Events />
+      </div>
+      <div className='panel'>
+        <News />
       </div>
       <Footer />
       {isPortraitOverlayActive ? (

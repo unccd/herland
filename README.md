@@ -2,6 +2,12 @@
 
 Welcome to the **Herland** project, a React application built using Vite and Taiwind CSS. This documentation provides step-by-step instructions for various scenarios you might encounter during your work on the project.
 
+
+You can access the live version of the project via the following links:
+
+- **Main Branch (Production):** [herland.global](https://herland.global/)
+- **Develop Branch (Staging):** [staging-herland](https://staging-herland.netlify.app/)
+
 ## Table of Contents
 1. Prerequisites
 2. Getting Started
@@ -52,7 +58,7 @@ To add a new slide to the website, follow these steps:
 
 1. Create a new folder in the `src/slides` directory with the name of your component, e.g., *DemoComponent*.
 
-2. Inside the folder, create a React component file (e.g., *TestComponent.jsx*).
+2. Inside the folder, create a React component file (e.g., *DemoComponent.jsx*).
 
 3.  Structure the component:
 
@@ -69,7 +75,7 @@ export default DemoComponent;
 ```
 4. Import your component in src/Homepage.jsx:
 ```jsx
-import TestComponent from './slides/TestComponent';
+import DemoComponent from './slides/DemoComponent';
 ...
 return (
       ...
@@ -84,35 +90,69 @@ return (
 
 ***Note***: If a panel's height exceeds `100vh` the scroll mode would switch to regular scroll, in order for the scroll effect to function each slide must be max 100vh.
 
-## Adding a New Pledge Card
-
-To add a new Pledge Card for the Pledges slide, follow these steps:
-
-1. Open `src/Pledges/pledgeData.jsx`.
-
-2. Locate the pledgeData array and add a new object:
-
-```jsx
- const pledgeData = [
- ...
- {
-   author: "Author name",
-   authorOccupation: "Author occupation",
-   paragraphs: [
-     "Paragraphs of text",
-     "Separated by vertical space",
-   ],
- }
- ...
-]
-```
-3. Customize the fields with the appropriate information.
-
-
-## Adding a New Image to the Carousel
+## Adding a new Image to the Carousel
 To add a new image to the carousel, follow these steps:
 
 1. Add a small resolution image to `src/static/small-portraits`, to be displayed as preview in the carousel.
 
-2. Add the corresponding full resolution image to `src/static/portraits` with the same name.
+2. Add the corresponding full resolution image to `src/static/portraits` with the same exact name.
 
+
+## Adding a new Event
+
+To add a new Event Card for the Events carousel, follow these steps:
+
+1. Open `src/slides/Events/eventsData.js`.
+
+2. Add a new image for the Event Card in `src/static/events` and import it in `eventsData.js`
+
+```js
+import event1Img from "../../static/events/event-card-1.png";
+import event2Img from "../../static/events/event-card-2.png";
+...
+import yourEventImage from "../../static/events/yourEventImage.png"
+
+```
+3. Locate the `events` array and add a new object:
+
+```jsx
+ const events = [
+ ...
+    {
+        imageSrc: yourEventImage,
+        href: "event href",
+        title: "Event title",
+        subtitle: "Event subtitle, can be used for location and dates",
+    },
+ ...
+]
+```
+4. Customize the fields with the appropriate information.
+
+## Adding a new News Item
+
+To add a new News Item for the News carousel, follow these steps:
+
+1. Open `src/slides/News/newsData.js`.
+
+2. Add a new image for the News Item in `src/static/news` and import it in `newsData.js`
+
+```js
+import yourNewsImage from "../../static/news/yourNewsImage.png"
+
+```
+3. Locate the `events` array and add a new object:
+
+```jsx
+ const news = [
+ ...
+    {
+        imageSrc: yourNewsImage,
+        href: "news href",
+        title: "News title",
+        subtitle: "News  subtitle, can be used for the date",
+    },
+ ...
+]
+```
+4. Customize the fields with the appropriate information.

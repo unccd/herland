@@ -173,7 +173,11 @@ iframe {
   background: url('../../static/events/event-4.png') no-repeat left center;
   background-size: cover;
 }
-
+.news-slide {
+  background: url('../../static/images/campaign-toolkit.jpg') no-repeat left
+    center;
+  background-size: cover;
+}
 .copywright {
   padding: 3.5rem 5rem;
   min-height: unset;

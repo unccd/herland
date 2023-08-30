@@ -3,13 +3,13 @@ import YuzenThumbnail from '../../static/video-thumbnails/1.png';
 import SuhucamThumbnail from '../../static/video-thumbnails/2.png';
 import AlvarezThumbnail from '../../static/video-thumbnails/3.png';
 import PlayIcon from '../../static/icons/play-fill.svg';
-import VideoOverlay from '../../overlays/VideoOverlay';
 import {
   textH2,
   textBodyLarge,
   textBodyMedium,
-  textBodyMediumBold,
+  textBodyLargeBold,
 } from '../../assets/css/fontSizes';
+
 function VideoExhibition(props) {
   const { setIsOverlayActive, setVideoSrc } = props;
   const showVideoOverlay = (url) => {
@@ -17,11 +17,11 @@ function VideoExhibition(props) {
     setIsOverlayActive(true);
   };
 
-  const nameClassNames = `${textBodyMediumBold} mt-6`;
+  const nameClassNames = `${textBodyLargeBold} mt-6`;
   const descriptionClassNames = `${textBodyMedium} mb-10`;
 
   return (
-    <section className='full-height bg-gray-950 text-white flex flex-col justify-center	panel-inner '>
+    <section className='full-height bg-gray-950 text-white flex flex-col justify-center	panel-inner'>
       <h2 className={`${textH2} mt-10`}>#HerLand Stories</h2>
       <p className={`${textBodyLarge} pt-10`}>
         Discover a unique fusion of nature, technology, and art in the #HerLand

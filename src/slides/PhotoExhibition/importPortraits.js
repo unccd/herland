@@ -4,7 +4,6 @@ function importAllSmallPortraits(images) {
     importedImages.push(images[imagePath].default);
   }
   return importedImages;
-
 }
 
 export default importAllSmallPortraits;

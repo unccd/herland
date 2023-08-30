@@ -4,6 +4,7 @@ import {
   landingHeader,
   landingHeaderDescription,
 } from '../../assets/css/fontSizes';
+
 function LandingPanel() {
   return (
     <section className='full-height text-white video-wrapper panel-inner landing-background'>

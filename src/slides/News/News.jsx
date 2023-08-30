@@ -5,34 +5,34 @@ import {
   textBodyMedium,
   textBodyLargeBold,
 } from '../../assets/css/fontSizes';
-import events from './eventsData';
+import news from './newsData';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CarouselLeftArrow from '../../static/icons/CarouselLeftArrow';
 import CarouselRightArrow from '../../static/icons/CarouselRightArrow';
 
-const EventItem = ({ event }) => {
+const NewsItem = ({ news }) => {
   return (
     <div className='grow select-none self-align-center justify-items-center max-sm:mx-0 sm:mx-2'>
-      <a href={event.href} target='_blank' rel='noopener noreferrer'>
+      <a href={news.href} target='_blank' rel='noopener noreferrer'>
         <div className='relative overflow-hidden bg-cover bg-no-repeat bg-white'>
           <img
-            src={event.imageSrc}
+            src={news.imageSrc}
             alt='Event image'
             className='w-full transition duration-300 ease-in-out hover:scale-105'
           />
         </div>
         <div className='mt-2'>
-          <h2 className={`${textBodyLargeBold} `}>{event.title}</h2>
-          <p className={`${textBodyMedium} `}>{event.subtitle}</p>
+          <h2 className={`${textBodyLargeBold} `}>{news.title}</h2>
+          <p className={`${textBodyMedium} `}>{news.date}</p>
         </div>
       </a>
     </div>
   );
 };
 
-function Events() {
-  const eventsCarouselRef = useRef(null);
+function News() {
+  const newsCarouselRef = useRef(null);
   const carouselResponsive = {
     xxl: {
       breakpoint: {
@@ -77,16 +77,16 @@ function Events() {
   };
 
   return (
-    <section className='full-height bg-stone-200 flex flex-col justify-around panel-inner'>
-      <div className='text-black '>
-        <h2 className={textH2}>Events </h2>
+    <section className='full-height flex flex-col justify-around panel-inner bg-gray-900'>
+      <div className='text-white '>
+        <h2 className={textH2}>News </h2>
         <div className='flex justify-between max-md:flex-col md:flex-row'>
           <p className={`${textBodyLarge} mt-6`}>
-            Here are some events where you can view the #HerLand Campaign:
+            Here are news related to the #HerLand Campaign:
           </p>
           <div className='flex self-end	'>
-            <CarouselLeftArrow innerRef={eventsCarouselRef} />
-            <CarouselRightArrow innerRef={eventsCarouselRef} />
+            <CarouselLeftArrow innerRef={newsCarouselRef} color='white' />
+            <CarouselRightArrow innerRef={newsCarouselRef} color='white' />
           </div>
         </div>
 
@@ -96,13 +96,13 @@ function Events() {
           responsive={carouselResponsive}
           slidesToSlide={1}
           swipeable
-          ref={(el) => (eventsCarouselRef.current = el)}
+          ref={(el) => (newsCarouselRef.current = el)}
           arrows={false}
           infinite
           partialVisbile={true}
         >
-          {events.map((event, index) => (
-            <EventItem event={event} key={index} />
+          {news.map((newsItem, index) => (
+            <NewsItem news={newsItem} key={index} />
           ))}
         </Carousel>
       </div>
@@ -110,4 +110,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default News;

@@ -5,8 +5,6 @@ import mainCampaignCover from '../../static/images/landing-background.jpg';
 const loadVideo = (coverId, playerId) => {
   const player = document.getElementById(playerId);
   const cover = document.getElementById(coverId);
-  console.log({ cover });
-  console.log('panret element', cover.parentElement);
 
   cover.parentElement.style.display = 'none';
   player.style.display = 'block';
@@ -15,29 +13,31 @@ const loadVideo = (coverId, playerId) => {
 
 function CampaignVideo() {
   return (
-    <section className='campaign-video-bg full-height text-white panel-inner grid content-center	'>
-      <div className='grid grid-cols-12 gap-6 md:mt-10 sm:mt-10 lg:mt-0 max-sm:mt-10'>
+    <section className='campaign-video-bg full-height text-white panel-inner grid content-center'>
+      <div className='grid grid-cols-12 gap-6 md:mt-10 sm:mt-10 lg:mt-0 max-sm:my-10'>
         <div
-          className='max-sm:col-span-12 sm:col-span-12 xl:col-span-5 lg:col-span-4 flex panel-inner relative '
+          className='max-sm:col-span-12 sm:col-span-12 xl:col-span-5 lg:col-span-4 flex panel-inner relative'
           style={{ position: 'relative' }}
         >
           <div className='cover video-thumbnail-wrapper flex justify-center'>
-            <img
-              id='main-campaign-thumb'
-              src={mainCampaignCover}
-              onClick={(event) => {
-                event.preventDefault();
-                loadVideo('main-campaign-thumb', 'main-campaign-video');
-              }}
-            />
-            <img
-              src={PlayIcon}
-              onClick={(event) => {
-                event.preventDefault();
-                loadVideo('main-campaign-thumb', 'main-campaign-video');
-              }}
-              className='play-button'
-            />
+            <div className='grid items-center	 '>
+              <img
+                id='main-campaign-thumb'
+                src={mainCampaignCover}
+                onClick={(event) => {
+                  event.preventDefault();
+                  loadVideo('main-campaign-thumb', 'main-campaign-video');
+                }}
+              />
+              <img
+                src={PlayIcon}
+                onClick={(event) => {
+                  event.preventDefault();
+                  loadVideo('main-campaign-thumb', 'main-campaign-video');
+                }}
+                className='play-button'
+              />
+            </div>
           </div>
           <iframe
             id='main-campaign-video'

@@ -8,14 +8,14 @@ function HerlandCTA() {
   const pClassName = `${textBodyMedium} max-sm:mt-3 lg:mt-4 md:mt-4`;
   return (
     <section className='panel-inner grid grid-cols-12 items-center herland-cta'>
-      <div className='col-span-12 grid grid-cols-12 gap-4 text-white max-sm:my-10 sm:my-2 '>
+      <div className='col-span-12 grid grid-cols-12 gap-4 text-white max-sm:my-10 sm:my-2'>
         <div className='col-span-12'>
           <h2 className={`${textH2} lg:mt-2`}>#HerLand Call to Action</h2>
           <p className={`${textBodyMediumBold} max-sm:mt-4 sm:mt-4 lg:mt-4`}>
             Make women's land rights a reality
           </p>
         </div>
-        <div className='xl:col-span-4 xl:col-span-4 lg:col-span-6 md:col-span-10 sm:col-span-12 max-sm:col-span-12 '>
+        <div className='xl:col-span-4 xl:col-span-6 lg:col-span-6 md:col-span-10 sm:col-span-12 max-sm:col-span-12'>
           <p className={pClassName}>
             Healthy land is vital for human survival, it is the largest source
             of income, jobs and livelihoods for poor, rural households. It is
