@@ -1,8 +1,8 @@
-import UzbekistanMarathon from '../../static/news/Uzbekisan_marathon_2.jpg.webp'
-import InnaWithDaughter from '../../static/news/Inna_with_daughter.jpg.webp'
-import UnHq from '../../static/news/UN_HQ_NY_2.jpg.webp'
-import UnccdTschad from '../../static/news/Unccd_Tschad.jpg.webp'
-import SuhucamCameroon from '../../static/news/Suhucam-Cameroon.jpg.webp'
+import UzbekistanMarathon from '../../static/news/Uzbekisan_marathon_2.jpg.webp';
+import InnaWithDaughter from '../../static/news/Inna_with_daughter.jpg.webp';
+import UnHq from '../../static/news/UN_HQ_NY_2.jpg.webp';
+import UnccdTschad from '../../static/news/Unccd_Tschad.jpg.webp';
+import SuhucamCameroon from '../../static/news/Suhucam-Cameroon.jpg.webp';
 
 const news = [
   {
@@ -32,10 +32,10 @@ const news = [
   {
     imageSrc: UnccdTschad,
     href: 'https://www.unccd.int/news-stories/press-releases/desertification-and-drought-day-2023-sets-ambitious-womens-land-rights',
-    title: 'Desertification and Drought Day 2023 sets an ambitious women\'s land rights agenda ',
+    title:
+      "Desertification and Drought Day 2023 sets an ambitious women's land rights agenda ",
     date: '20 MARCH 2023',
   },
-]
+];
 
-
-export default news 
+export default news;

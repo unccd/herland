@@ -21,25 +21,23 @@ function CampaignVideo() {
         >
           <div className='cover video-thumbnail-wrapper flex justify-center'>
             <div className='grid items-center	 '>
-            <img
-              id='main-campaign-thumb'
-              src={mainCampaignCover}
-              onClick={(event) => {
-                event.preventDefault();
-                loadVideo('main-campaign-thumb', 'main-campaign-video');
-              }}
-            />
-            <img
-              src={PlayIcon}
-              onClick={(event) => {
-                event.preventDefault();
-                loadVideo('main-campaign-thumb', 'main-campaign-video');
-              }}
-              className='play-button'
-            />
+              <img
+                id='main-campaign-thumb'
+                src={mainCampaignCover}
+                onClick={(event) => {
+                  event.preventDefault();
+                  loadVideo('main-campaign-thumb', 'main-campaign-video');
+                }}
+              />
+              <img
+                src={PlayIcon}
+                onClick={(event) => {
+                  event.preventDefault();
+                  loadVideo('main-campaign-thumb', 'main-campaign-video');
+                }}
+                className='play-button'
+              />
             </div>
-
-          
           </div>
           <iframe
             id='main-campaign-video'
