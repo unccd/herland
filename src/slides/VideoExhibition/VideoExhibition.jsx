@@ -91,14 +91,14 @@ function VideoExhibition(props) {
           >
             <img
               src={episode4Thumbnail}
-              alt='Rjim Maatoug - Women-led transformation'
+              alt='Rjim Maatoug - Women-led Transformation'
               className='video-thumbnail'
             />
             <img src={PlayIcon} className='play-button' />
           </div>
           <h3 className={nameClassNames}>Rjim Maatoug</h3>
           <p className={descriptionClassNames}>
-            Women-led transformation
+            Women-led Transformation
           </p>
         </div>
         <div className='mt-0 mb-2'>
@@ -108,14 +108,14 @@ function VideoExhibition(props) {
           >
             <img
               src={episode5Thumbnail}
-              alt='Boglárka Amrein Tamásné Miskolczi - Ecological farm and bird-nest box station'
+              alt='Boglárka Amrein Tamásné Miskolczi - Ecological Farm and Bird-nest Box Station'
               className='video-thumbnail'
             />
             <img src={PlayIcon} className='play-button' />
           </div>
           <h3 className={nameClassNames}>Boglárka Amrein Tamásné Miskolczi</h3>
           <p className={descriptionClassNames}>
-          Ecological farm and bird-nest box station
+          Ecological Farm and Bird-nest Box Station
           </p>
         </div>
       </div>
