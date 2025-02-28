@@ -38,6 +38,17 @@ function CampaignToolkit() {
             </p>
           </div>
         </a>
+        <a
+          href='https://www.unccd.int/sites/default/files/2025-02/Her%20Land-Final%20singles%20version.pdf'
+          target='_blank'
+        >
+          <div className='flex max-sm:gap-2 sm:gap-2 md:gap-5 mt-4 cursor-pointer hover:underline campaign-toolkit-link'>
+            <img src={ArrowRight} className='icon scale-150' />
+            <p className={`${textBodyLarge} campaign-toolkit-link`}>
+              Download e-book
+            </p>
+          </div>
+        </a>
       </div>
     </section>
   );

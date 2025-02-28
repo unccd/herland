@@ -15,6 +15,7 @@ import Footer from './slides/Footer/Footer';
 import HerlandCTA from './slides/HerlandCTA/HerlandCTA';
 import Pledges from './slides/Plegdes/Pledges';
 import News from './slides/News/News';
+import DownloadBook from './slides/DownloadBook/DownloadBook';
 
 function Homepage() {
   const [isPortraitOverlayActive, setIsPortraitOverlayActive] = useState(false);
@@ -134,6 +135,9 @@ function Homepage() {
       </div>
       <div className='panel'>
         <CampaignVideo />
+      </div>
+      <div className='panel'>
+        <DownloadBook />
       </div>
       <div className='panel' id='herland-cta'>
         <HerlandCTA />

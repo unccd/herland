@@ -5,8 +5,9 @@ Welcome to the **Herland** project, a React application built using Vite and Tai
 
 You can access the live version of the project via the following links:
 
-- **Main Branch (Production):** [herland.global](https://herland.global/)
-- **Develop Branch (Staging):** [staging-herland](https://staging-herland.netlify.app/)
+- **Main Branch (Production):** [herland.global](https://herland.global/) [![Deploy status](https://github.com/unccd/herland/actions/workflows/build-and-deploy.yml/badge.svg?branch=main)](https://github.com/unccd/herland/actions/workflows/build-and-deploy.yml)
+- **Develop Branch (Test):** [unccd-herland.netlify.app](https://unccd-herland.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/68d7532d-c7cc-4123-b964-4fb5f733644a/deploy-status)](https://app.netlify.com/sites/unccd-herland/deploys)
+
 
 ## Table of Contents
 1. Prerequisites
