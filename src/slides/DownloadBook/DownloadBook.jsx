@@ -1,5 +1,8 @@
 import React from 'react';
 import ArrowRight from '../../static/icons/arrow-right.svg';
+import bookCover from '../../static/images/download-book.png';
+import bookCoverBlurred1 from '../../static/images/download-book-blured-1.png';
+import bookCoverBlurred2 from '../../static/images/download-book-blured-2.png';
 import {
   textH2,
   textBodyLarge,
@@ -11,7 +14,7 @@ const DownloadBook = () => (
       <div className='max-sm:col-span-12 sm:col-span-12 lg:col-span-7 text-black content-center'>
         <h2 className={`${textH2} campaign-toolkit-h2`}>Download the e-book</h2>
         <div className='mt-10 d-flex max-sm:flex-col sm:flex-col md:flex-col lg:flex-row gap-10'>
-          <img src='/src/static/images/download-book.png'></img>
+          <img src={bookCover} />
           <div >
             <p className='max-sm:text-sm sm:text-base md:text-base lg:text-base xl:text-xl 2xl:text-xl leading-5	font-light '>Gender equality remains unfinished business in every part of the world. In the vast majority of countries, women have unequal and limited access and control to land. In many regions, they remain subject to discriminatory laws and practices that impede their right to inherit, as well as their access to services and resources. </p>
             <p className='max-sm:text-sm sm:text-base md:text-base lg:text-base xl:text-xl 2xl:text-xl leading-5	font-light max-sm:mt-3 lg:mt-4 md:mt-4'>#HerLand campaign highlights women and girls’ vital role in global land restoration and in achieving environmental sustainability, mobilizing support to secure land rights for women and girls and to create a better and equal future for all.</p>
@@ -31,8 +34,8 @@ const DownloadBook = () => (
       </div>
       <div className='col-span-1'></div>
       <div className='max-sm:hidden sm:hidden md:hidden lg:flex col-span-4 overflow-hidden relative image-margin'>
-        <img className='max-h-screen object-cover w-100' src='/src/static/images/download-book-blured-2.png'></img>
-        <img className='max-h-screen object-cover w-100' src='/src/static/images/download-book-blured-1.png'></img>
+        <img className='max-h-screen object-cover w-100' src={bookCoverBlurred1} />
+        <img className='max-h-screen object-cover w-100' src={bookCoverBlurred2} />
       </div>
   </section>
 );
