@@ -139,6 +139,14 @@ iframe {
   transform: scale(1.05);
 }
 
+/* download book */
+.download-book-background {
+  background-color: #EFF0EB;
+}
+.image-margin {
+  right: calc(-5em - 15px);
+}
+
 /* campaign toolkit */
 .campaign-toolkit-background {
   background: url('../../static/images/campaign-toolkit.jpg') no-repeat left
