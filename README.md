@@ -157,3 +157,18 @@ import yourNewsImage from "../../static/news/yourNewsImage.png"
 ]
 ```
 4. Customize the fields with the appropriate information.
+
+## Adding new images in general
+
+To add a new image use:
+```jsx
+  import image from '../../static/images/image.jpg';
+
+  <img src={image} />
+
+```
+Don't use
+```jsx
+ <img src="/src/static/images/image.jpg" />
+```
+because this will not export the image during the build step.
